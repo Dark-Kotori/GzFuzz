@@ -63,10 +63,11 @@ from search_model_with_plugin import retrieve_model_by_index
 import csv
 
 
-FIRST_DIR = ['/workspace', '/gazebo/800']
-DIR_FLAG = 0
+# FIRST_DIR = ['/workspace', '/gazebo/800']
+# DIR_FLAG = 0
 
-DIR = FIRST_DIR[DIR_FLAG] + '/install/lib/python/gz/msgs10'
+# DIR = FIRST_DIR[DIR_FLAG] + '/install/lib/python/gz/msgs10'
+DIR = 'install/lib/python/gz/msgs10'
 MAX_MODEL_NUM = 20
 NUM_ARM = 7 # dirty, should be calculated, not assigned
 RANDPROTO_TIMEOUT = 10

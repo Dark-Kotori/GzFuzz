@@ -1,0 +1,64 @@
+Repository: src/gz-sim
+Current Commit Hash: 18aa48fe7dc98a3d82216c8aab3f2c57eb97ff48
+Tags: gz-sim8_8.0.0
+----------------------------------------
+Repository: src/gz-plugin
+Current Commit Hash: e296968d2e4013d9d8c95d31c1f7b4dd5d2e87d8
+Closest Tag: gz-plugin2_2.0.3
+----------------------------------------
+Repository: src/gz-sensors
+Current Commit Hash: f6b4ba08b93d4ad2aa85c6750df75eb5447aa9a0
+Closest Tag: gz-sensors8_8.2.0
+----------------------------------------
+Repository: src/gz-transport
+Current Commit Hash: 254921a010a37325ce2dfd71a1b09aca6227f8cd
+Closest Tag: gz-transport13_13.4.0
+----------------------------------------
+Repository: src/gz-math
+Current Commit Hash: 5072602c5ea8b8434a11d42f296aeedf1b695498
+Tags: gz-math7_7.5.1
+----------------------------------------
+Repository: src/gz-msgs
+Current Commit Hash: 0da35a8b1239c3186e398ac4ed2dbe1762f3aaa4
+Tags: gz-msgs10_10.3.0
+----------------------------------------
+Repository: src/gz-utils
+Current Commit Hash: 6d794baee85ede49ed4347c25864ddf458eec5f7
+Closest Tag: gz-utils2_2.2.0
+----------------------------------------
+Repository: src/gz-cmake
+Current Commit Hash: 34c111c404f343c64c6f429e34061b18fdb5c13c
+Closest Tag: gz-cmake3_3.5.3
+----------------------------------------
+Repository: src/gz-gui
+Current Commit Hash: b26f652e55ba754e587920cf6442cbc739825bc0
+Closest Tag: gz-gui8_8.3.0
+----------------------------------------
+Repository: src/sdformat
+Current Commit Hash: 68159a77525d3c78825e88c4fb256f130b7fb6fd
+Closest Tag: sdformat14_14.5.0
+----------------------------------------
+Repository: src/gz-rendering
+Current Commit Hash: 64820c0f3b389f32ec929130c8486c42df43e9e5
+Closest Tag: gz-rendering8_8.2.0
+----------------------------------------
+Repository: src/gz-fuel-tools
+Current Commit Hash: 9546d4e3b3d296c01cdcfa93896ca26ac2a4cf62
+Closest Tag: gz-fuel-tools9_9.1.0
+----------------------------------------
+Repository: src/gz-common
+Current Commit Hash: 2faf830f480aba419d3dade55dad731fdf147add
+Closest Tag: gz-common5_5.6.0
+----------------------------------------
+Repository: src/gz-physics
+Current Commit Hash: a068d3f730b8eb2886eff72a8828930489789bc9
+Closest Tag: gz-physics7_7.3.0
+----------------------------------------
+Repository: src/gz-tools
+Current Commit Hash: 2b228e5b956f1e966053dd860374670573580b41
+Closest Tag: gz-tools2_2.0.1
+----------------------------------------
+Repository: src/gz-launch
+Current Commit Hash: 08518998140c0533c3d91a9a967a63648b383f88
+Closest Tag: gz-launch7_7.1.0
+----------------------------------------
