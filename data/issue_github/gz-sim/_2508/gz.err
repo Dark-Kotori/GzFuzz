@@ -1,0 +1,36 @@
+[Err] [EntityComponentManager.cc:1083] Trying to create a component of type [9904571861011273795] attached to entity [47], but this entity does not exist. This create component request will be ignored.
+[Err] [LiftDrag.cc:537] The LiftDrag system should be attached to a model entity. Failed to initialize.
+Stack trace (most recent call last):
+#31   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab5dce19, in ruby_run_node
+#30   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab5d9317, in
+#29   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab76e33c, in rb_vm_exec
+#28   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab768cc6, in
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab765ff5, in
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab763c64, in
+#25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab6afa4e, in
+#24   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab5da9ac, in rb_protect
+#23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab772c91, in rb_yield
+#22   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab76e33c, in rb_vm_exec
+#21   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab768cc6, in
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab765ff5, in
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab763c64, in
+#18   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f91a731144b, in
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f91ab7310b8, in rb_nogvl
+#16   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f91a7310d6b, in
+#15   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f91a7302492, in
+#14   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f91a7305e2d, in
+#13   Object "/data/play/robot/workspace/install/lib/libgz-sim8-gz.so.8.6.0", at 0x7f91a6659d7d, in runServer
+#12   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f91a4d1356a, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#11   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f91a4d3efdf, in
+#10   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f91a4d6fd84, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#9    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f91a4d70ba2, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#8    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f91a4d6cf2a, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#7    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-lift-drag-system.so", at 0x7f91664a48a1, in gz::sim::v8::systems::LiftDrag::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#6    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-lift-drag-system.so", at 0x7f916649ee5e, in gz::sim::v8::systems::LiftDragPrivate::Load(gz::sim::v8::EntityComponentManager const&, std::shared_ptr<sdf::v14::Element> const&)
+#5    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f91a4b94f9c, in std::pair<double, bool> sdf::v14::Element::Get<double>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double const&) const
+#4    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f91a4b9f902, in std::pair<double, bool> sdf::v14::Element::Get<double>(std::vector<sdf::v14::Error, std::allocator<sdf::v14::Error> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double const&) const
+#3    Object "/home/ren/play/robot/workspace/install/lib/libsdformat14.so.14", at 0x7f91a2a0fda6, in sdf::v14::Element::GetAttribute(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+#2    Object "/home/ren/play/robot/workspace/install/lib/libsdformat14.so.14", at 0x7f91a295dc43, in
+#1    Object "/home/ren/play/robot/workspace/install/lib/libsdformat14.so.14", at 0x7f91a296b99b, in
+#0    Object "/home/ren/play/robot/workspace/install/lib/libsdformat14.so.14", at 0x7f91a2973d7e, in
+    Segmentation fault (Address not mapped to object [0x18])

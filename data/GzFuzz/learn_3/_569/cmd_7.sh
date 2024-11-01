@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/sensors_system/get_parameter --reptype gz.msgs.ParameterValue --reqtype gz.msgs.ParameterName --req 'name: "e"'

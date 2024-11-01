@@ -1,0 +1,35 @@
+Stack trace (most recent call last):
+#31   Object "gz sim server", at 0x5621e3bab1c4, in _start
+#30   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7fc51da82e3f, in __libc_start_main
+#29   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7fc51da82d8f, in
+#28   Object "gz sim server", at 0x5621e3bab17e, in
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51dd2ae19, in ruby_run_node
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51dd27317, in
+#25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51debc33c, in rb_vm_exec
+#24   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51deb6cc6, in
+#23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51deb3ff5, in
+#22   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51deb1c64, in
+#21   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51ddfda4e, in
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51dd289ac, in rb_protect
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51dec0c91, in rb_yield
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51debc33c, in rb_vm_exec
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51deb6cc6, in
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51deb3ff5, in
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51deb1c64, in
+#14   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7fc519a5f44b, in
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7fc51de7f0b8, in rb_nogvl
+#12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7fc519a5ed6b, in
+#11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7fc519a50492, in
+#10   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7fc519a53e2d, in
+#9    Object "/data/play/robot/workspace/install/lib/libgz-sim8-gz.so.8.5.0", at 0x7fc518da7d7d, in runServer
+#8    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fc5174b7fee, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fc5174e3a63, in
+#6    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fc517514740, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#5    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fc51751555e, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#4    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fc5175118e6, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#3    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-user-commands-system.so", at 0x7fc4db654f5b, in gz::sim::v8::systems::UserCommands::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#2    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-user-commands-system.so", at 0x7fc4db661b3d, in gz::sim::v8::systems::EnableCollisionCommand::Execute()
+#1    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-user-commands-system.so", at 0x7fc4db650882, in gz::sim::v8::systems::UserCommandsInterface::HasContactSensor(unsigned long)
+#0    Object "/data/play/robot/workspace/install/lib/libgz-sim8-gz.so.8.5.0", at 0x7fc518e3e8b5, in gz::sim::v8::components::Component<unsigned long, gz::sim::v8::components::ParentEntityTag, gz::sim::v8::serializers::DefaultSerializer<unsigned long> >::Component(gz::sim::v8::components::Component<unsigned long, gz::sim::v8::components::ParentEntityTag, gz::sim::v8::serializers::DefaultSerializer<unsigned long> > const&)
+Segmentation fault (Address not mapped to object [0x8])
+

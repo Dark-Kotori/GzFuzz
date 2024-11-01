@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /model/model/battery/linear_battery/recharge/start --reptype gz.msgs.Empty --reqtype gz.msgs.Boolean --req ''

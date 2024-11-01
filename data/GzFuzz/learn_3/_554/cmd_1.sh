@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/wide_angle_camera_sensor/list_parameters --reptype gz.msgs.ParameterDeclarations --reqtype gz.msgs.Empty --req 'unused: true'

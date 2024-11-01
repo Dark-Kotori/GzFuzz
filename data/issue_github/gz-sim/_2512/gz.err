@@ -1,0 +1,21 @@
+[Err] [EntityComponentManager.cc:1083] Trying to create a component of type [9904571861011273795] attached to entity [100], but this entity does not exist. This create component request will be ignored.
+[Err] [DiffDrive.cc:185] DiffDrive plugin should be attached to a model entity. Failed to initialize.
+Stack trace (most recent call last) in thread 237459:
+#16   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in
+#15   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7ff6cad4084f, in
+#14   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7ff6cacaeac2, in
+#13   Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7ff6c69eb252, in
+#12   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff6c468ac8f, in
+#11   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff6c468accf, in
+#10   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff6c468ad43, in
+#9    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff6c468ae15, in
+#8    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff6c468aead, in
+#7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff6c467afb1, in
+#6    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-diff-drive-system.so", at 0x7ff685da7326, in gz::sim::v8::systems::DiffDrive::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#5    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-diff-drive-system.so", at 0x7ff685da8e22, in gz::sim::v8::systems::DiffDrivePrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#4    Object "/home/ren/play/robot/workspace/install/lib/libgz-math7.so.7", at 0x7ff6bf4a48e9, in gz::math::v7::SpeedLimiter::Limit(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+#3    Object "/home/ren/play/robot/workspace/install/lib/libgz-math7.so.7", at 0x7ff6bf4a4e0e, in gz::math::v7::SpeedLimiter::LimitJerk(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+#2    Object "/home/ren/play/robot/workspace/install/lib/libgz-math7.so.7", at 0x7ff6bf4a5341, in std::unique_ptr<gz::math::v7::SpeedLimiterPrivate, std::default_delete<gz::math::v7::SpeedLimiterPrivate> >::operator->() const
+#1    Object "/home/ren/play/robot/workspace/install/lib/libgz-math7.so.7", at 0x7ff6bf4a5531, in std::unique_ptr<gz::math::v7::SpeedLimiterPrivate, std::default_delete<gz::math::v7::SpeedLimiterPrivate> >::get() const
+#0    Object "/home/ren/play/robot/workspace/install/lib/libgz-math7.so.7", at 0x7ff6bf4a5680, in std::__uniq_ptr_impl<gz::math::v7::SpeedLimiterPrivate, std::default_delete<gz::math::v7::SpeedLimiterPrivate> >::_M_ptr() const
+Segmentation fault (Address not mapped to object [(nil)])

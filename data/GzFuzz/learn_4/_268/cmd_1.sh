@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/force_torque/get_parameter --reptype gz.msgs.ParameterValue --reqtype gz.msgs.ParameterName --req 'name: "m"'

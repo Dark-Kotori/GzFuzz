@@ -1,0 +1,27 @@
+Stack trace (most recent call last):
+#24   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#23   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x563e055801c4, in _start
+#22   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f617041ce3f, in __libc_start_main
+#21   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f617041cd8f, in 
+#20   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x563e0558017e, in 
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f61706c4e19, in ruby_run_node
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f61706c1317, in 
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f617085633c, in rb_vm_exec
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f6170850cc6, in 
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f617084dff5, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f617084bc64, in 
+#13   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f616c3f944b, in 
+#12   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f61708190b8, in rb_nogvl
+#11   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f616c3f8d6b, in 
+#10   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f616c3ea492, in 
+#9    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f616c3ede2d, in 
+#8    Object "/data/play/robot/workspace/install/lib/libgz-sim8-gz.so.8.6.0", at 0x7f616b741d7d, in runServer
+#7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6169dbf692, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#6    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6169deb107, in 
+#5    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6169e1bab4, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#4    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6169e1c8d2, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#3    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6169e18aa8, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#2    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x7f612aefbbe5, in gz::sim::v8::systems::OpticalTactilePlugin::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#1    Object "/home/ren/play/robot/workspace/install/lib/libgz-msgs10.so.10", at 0x7f616595b3e0, in google::protobuf::RepeatedPtrField<gz::msgs::Contact>::begin() const
+#0    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6169ed7c3c, in google::protobuf::internal::RepeatedPtrFieldBase::raw_data() const
+Segmentation fault (Address not mapped to object [0x28])

@@ -1,0 +1,10 @@
+<?xml veqsion="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <physics name="fast" type="}gnored">
+      <real_time_factor>0</real_time_factor>
+    </physics>
+
+    <include>
+      <uri>https:osim.org/1.0/openrobothics/<?xmbothics/<?xml version="1.0" ?>
+<sdf version=

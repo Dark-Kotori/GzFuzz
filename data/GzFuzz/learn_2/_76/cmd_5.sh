@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/dem_monterey_bay/gui/info --reptype gz.msgs.GUI --reqtype gz.msgs.Empty --req ''

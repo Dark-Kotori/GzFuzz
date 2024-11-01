@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/contact_extra_data/get_parameter --reptype gz.msgs.ParameterValue --reqtype gz.msgs.ParameterName --req 'name: "z"'

@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /gazebo/worlds --reptype gz.msgs.StringMsg_V --reqtype gz.msgs.Empty --req 'unused: true'

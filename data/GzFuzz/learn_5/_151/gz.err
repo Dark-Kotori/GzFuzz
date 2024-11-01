@@ -1,0 +1,18 @@
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (5,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.
+Stack trace (most recent call last) in thread 684472:
+#7    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#6    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7e29d772684f, in 
+#5    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7e29d7694ac2, in 
+#4    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7e29d30dc252, in 
+#3    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7e29d1b54c50, in 
+#2    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7e29d1b54133, in 
+#1    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7e29bef70dd1, in gz::sim::v8::systems::AckermannSteering::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#0    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7e29bef585be, in gz::sim::v8::systems::AckermannSteeringPrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+Segmentation fault (Address not mapped to object [(nil)])

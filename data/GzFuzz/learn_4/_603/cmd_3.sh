@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/nested_model_world/scene/graph --reptype gz.msgs.StringMsg --reqtype gz.msgs.Empty --req ''

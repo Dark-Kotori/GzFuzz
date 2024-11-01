@@ -1,0 +1,3 @@
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: -

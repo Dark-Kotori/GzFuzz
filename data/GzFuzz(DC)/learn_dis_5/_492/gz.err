@@ -1,0 +1,4 @@
+NodeShared::RecvSrvRequest() error sending response: Host unreachable
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: 9510.8
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: 0.0
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: 532740.5

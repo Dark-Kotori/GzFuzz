@@ -1,0 +1,10 @@
+Stack trace (most recent call last) in thread 2176990:
+#7    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#6    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7c214712684f, in 
+#5    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7c2147094ac2, in 
+#4    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7c2142adc252, in 
+#3    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c2141554c50, in 
+#2    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c2141554133, in 
+#1    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7c212d570dd1, in gz::sim::v8::systems::AckermannSteering::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#0    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7c212d5585be, in gz::sim::v8::systems::AckermannSteeringPrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+Segmentation fault (Address not mapped to object [(nil)])

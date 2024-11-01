@@ -1,0 +1,29 @@
+Stack trace (most recent call last):
+#26   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#25   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x564885a661c4, in _start
+#24   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7580ca029e3f, in __libc_start_main
+#23   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7580ca029d8f, in 
+#22   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x564885a6617e, in 
+#21   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7580ca4a8e19, in ruby_run_node
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7580ca4a5317, in 
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7580ca63a30c, in rb_vm_exec
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7580ca634c96, in 
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7580ca631fc5, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7580ca62fc34, in 
+#15   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7580c9e8a44b, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7580ca5fd088, in rb_nogvl
+#13   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7580c9e89d6b, in 
+#12   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7580c9e7b492, in 
+#11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7580c9e7ee2d, in 
+#10   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7580c72ed9f7, in runServer
+#9    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7580c44cd25a, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#8    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7580c45139d4, in 
+#7    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7580c456f01a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#6    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7580c456cdc8, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#5    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7580c454a0ba, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#4    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-lift-drag-system.so", at 0x7580b2265626, in gz::sim::v8::systems::LiftDrag::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#3    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-lift-drag-system.so", at 0x7580b2261b42, in gz::sim::v8::systems::LiftDragPrivate::Load(gz::sim::v8::EntityComponentManager const&, std::shared_ptr<sdf::v14::Element> const&)
+#2    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7580c42e094b, in std::pair<double, bool> sdf::v14::Element::Get<double>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double const&) const
+#1    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7580c42dfaeb, in 
+#0    Object "/home/qiguanxiao/workspace/install/lib/libsdformat14.so.14", at 0x7580c2e3bc77, in sdf::v14::Element::GetAttribute(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+Segmentation fault (Address not mapped to object [0x18])

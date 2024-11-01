@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/ackermann_steering/get_parameter --reptype gz.msgs.ParameterValue --reqtype gz.msgs.ParameterName --req 'name: "hs"'

@@ -1,0 +1,9 @@
+gz service --timeout 10000 -s /world/default/entity/system/add --reptype gz.msgs.Boolean --reqtype gz.msgs.EntityPlugin_V --req 'entity {
+  id: 22
+}
+plugins {
+  name: "gz::sim::systems::DetachableJoint"
+  filename: "gz-sim-detachable-joint-system"
+  innerxml: "<parent_link>chassis</parent_link>\n<child_model>B2</child_model>\n<child_link>body</child_link>\n<detach_topic>/B2/detach</detach_topic>\n<attach_topic>509003</attach_topic>\n<output_topic>/B2/state</output_topic>"
+}
+'

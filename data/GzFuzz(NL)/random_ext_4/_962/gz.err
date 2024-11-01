@@ -1,0 +1,27 @@
+Stack trace (most recent call last):
+#24   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#23   Object "gz sim /home/momo/workspace/exp/random_large_1/_962/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x58d2481e71c4, in _start
+#22   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76e726e29e3f, in __libc_start_main
+#21   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76e726e29d8f, in 
+#20   Object "gz sim /home/momo/workspace/exp/random_large_1/_962/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x58d2481e717e, in 
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x76e7272a8e19, in ruby_run_node
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x76e7272a5317, in 
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x76e72743a30c, in rb_vm_exec
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x76e727434c96, in 
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x76e727431fc5, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x76e72742fc34, in 
+#13   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x76e7275a744b, in 
+#12   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x76e7273fd088, in rb_nogvl
+#11   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x76e7275a6d6b, in 
+#10   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x76e727581492, in 
+#9    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x76e727584e2d, in 
+#8    Object "/home/momo/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x76e721badd9d, in runServer
+#7    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x76e7200ace72, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#6    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x76e7200d6f5b, in 
+#5    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x76e720107bb2, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#4    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x76e7201089d0, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#3    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x76e720104d58, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#2    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-multicopter-motor-model-system.so", at 0x76e6d977faca, in gz::sim::v8::systems::MulticopterMotorModel::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#1    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x76e72294c4ac, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x76e72294bf9c, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x10])

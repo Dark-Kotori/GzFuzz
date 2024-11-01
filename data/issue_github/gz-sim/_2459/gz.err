@@ -1,0 +1,19 @@
+Stack trace (most recent call last) in thread 32088:
+#15   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in
+#14   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7efd4277984f, in
+#13   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7efd426e7ac2, in
+#12   Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7efd3e424252, in
+#11   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7efd3c11a5f5, in
+#10   Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7efd3c11a635, in
+#9    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7efd3c11a6a9, in
+#8    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7efd3c11a77b, in
+#7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7efd3c11a813, in
+#6    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7efd3c10a9a3, in
+#5    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-joint-state-publisher-system.so", at 0x7efcfd8af1b7, in gz::sim::v8::systems::JointStatePublisher::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#4    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-joint-state-publisher-system.so", at 0x7efcfd8b46aa, in gz::msgs::Joint::set_name(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#3    Object "/home/ren/play/robot/workspace/install/lib/libgz-msgs10.so.10", at 0x7efd37f71361, in gz::msgs::Joint::_internal_set_name(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8-gui.so.8", at 0x7efd3d26139b, in google::protobuf::internal::ArenaStringPtr::Set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, google::protobuf::Arena*)
+#1    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8-gui.so.8", at 0x7efd3d261708, in google::protobuf::internal::ArenaStringPtr::CreateInstance(google::protobuf::Arena*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*)
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7efd3e497148, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x10])
+

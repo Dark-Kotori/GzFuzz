@@ -1,0 +1,27 @@
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+Stack trace (most recent call last):
+#22   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#21   Object "gz sim /home/liyitao/workspace/exp/learn_2/_519/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5a187d8f31c4, in _start
+#20   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71058fc29e3f, in __libc_start_main
+#19   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71058fc29d8f, in 
+#18   Object "gz sim /home/liyitao/workspace/exp/learn_2/_519/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5a187d8f317e, in 
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7105900a8e19, in ruby_run_node
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7105900a5317, in 
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71059023a30c, in rb_vm_exec
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x710590234c96, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x710590231fc5, in 
+#12   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71059022fc34, in 
+#11   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x71058ff1044b, in 
+#10   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7105901fd088, in rb_nogvl
+#9    Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x71058ff0fd6b, in 
+#8    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x71058ff01492, in 
+#7    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x71058ff04e2d, in 
+#6    Object "/home/liyitao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x71058f17e92f, in runServer
+#5    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x71058a3bd721, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#4    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x71058a3d0f8f, in 
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x71058a3f043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x71058a3ef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#1    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x71058a3e1d81, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#0    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x71057778c9b8, in gz::sim::v8::systems::OpticalTactilePlugin::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+Segmentation fault (Address not mapped to object [0x28])

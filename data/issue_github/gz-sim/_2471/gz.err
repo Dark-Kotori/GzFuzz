@@ -1,0 +1,35 @@
+gz sim server: ./dart/constraint/ContactConstraint.cpp:96: dart::constraint::ContactConstraint::ContactConstraint(dart::collision::Contact&, double, const dart::constraint::ContactSurfaceParams&): Assertion `contact.normal.squaredNorm() >= DART_CONTACT_CONSTRAINT_EPSILON_SQUARED' failed.
+Stack trace (most recent call last):
+#31   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f6768ed99ac, in rb_protect
+#30   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f6769071c91, in rb_yield
+#29   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f676906d33c, in rb_vm_exec
+#28   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f6769067cc6, in
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f6769064ff5, in
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f6769062c64, in
+#25   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f6764c1044b, in
+#24   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f67690300b8, in rb_nogvl
+#23   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f6764c0fd6b, in
+#22   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f6764c01492, in
+#21   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f6764c04e2d, in
+#20   Object "/data/play/robot/workspace-exp/install/lib/libgz-sim9-gz.so.9.0.0", at 0x7f6763f5f03d, in runServer
+#19   Object "/data/play/robot/workspace-exp/install/lib/libgz-sim9.so.9", at 0x7f6762aab702, in gz::sim::v9::Server::Run(bool, unsigned long, bool)
+#18   Object "/data/play/robot/workspace-exp/install/lib/libgz-sim9.so.9", at 0x7f6762ad70d9, in
+#17   Object "/data/play/robot/workspace-exp/install/lib/libgz-sim9.so.9", at 0x7f6762b0799a, in gz::sim::v9::SimulationRunner::Run(unsigned long)
+#16   Object "/data/play/robot/workspace-exp/install/lib/libgz-sim9.so.9", at 0x7f6762b087b8, in gz::sim::v9::SimulationRunner::Step(gz::sim::v9::UpdateInfo const&)
+#15   Object "/data/play/robot/workspace-exp/install/lib/libgz-sim9.so.9", at 0x7f6762b04ca3, in gz::sim::v9::SimulationRunner::UpdateSystems()
+#14   Object "/data/play/robot/workspace-exp/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x7f673103c279, in
+#13   Object "/data/play/robot/workspace-exp/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x7f673105a99f, in
+#12   Object "/data/play/robot/workspace-exp/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x7f6731115ee2, in
+#11   Object "/data/play/robot/workspace-exp/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7f672a85986b, in
+#10   Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7f6729664e23, in dart::simulation::World::step(bool)
+#9    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7f672964a435, in dart::constraint::ConstraintSolver::solve()
+#8    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7f6729649152, in dart::constraint::ConstraintSolver::updateConstraints()
+#7    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7f672964cfa6, in dart::constraint::DefaultContactSurfaceHandler::createConstraint(dart::collision::Contact&, unsigned long, double) const
+#6    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7f672964cf3f, in dart::constraint::ContactSurfaceHandler::createConstraint(dart::collision::Contact&, unsigned long, double) const
+#5    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7f672964ce07, in dart::constraint::ContactConstraint::ContactConstraint(dart::collision::Contact&, double, dart::constraint::ContactSurfaceParams const&)
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f6768c43e95, in __assert_fail
+#3    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f6768c3271a, in
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f6768c327f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f6768c4c475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f6768ca09fc, in pthread_kill
+Aborted (Signal sent by tkill() 1112300 1000)

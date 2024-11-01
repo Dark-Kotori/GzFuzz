@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/wind_demo/wind_info --reptype gz.msgs.Wind --reqtype gz.msgs.Empty --req 'unused: true'

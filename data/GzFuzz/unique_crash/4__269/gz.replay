@@ -1,0 +1,14 @@
+Stack trace (most recent call last) in thread 787603:
+#11   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#10   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x72c86952684f, in 
+#9    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x72c869494ac2, in 
+#8    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x72c864edc252, in 
+#7    Object "/home/qiguanxiao/workspace/install/lib/libgz-transport13.so.13", at 0x72c861b723ed, in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (gz::transport::v13::NodeShared::*)(), gz::transport::v13::NodeShared*> > >::_M_run()
+#6    Object "/home/qiguanxiao/workspace/install/lib/libgz-transport13.so.13", at 0x72c861b71c17, in gz::transport::v13::NodeShared::RunReceptionTask()
+#5    Object "/home/qiguanxiao/workspace/install/lib/libgz-transport13.so.13", at 0x72c861b6ff9a, in gz::transport::v13::NodeShared::RecvSrvRequest()
+#4    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x72c84bfa59d5, in gz::transport::v13::RepHandler<gz::msgs::Boolean, gz::msgs::Empty>::RunCallback(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+#3    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x72c84bf25e45, in std::_Function_handler<bool (gz::msgs::Boolean const&, gz::msgs::Empty&), gz::transport::v13::Node::Advertise<gz::sim::v8::systems::OpticalTactilePluginPrivate, gz::msgs::Boolean>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, void (gz::sim::v8::systems::OpticalTactilePluginPrivate::*)(gz::msgs::Boolean const&), gz::sim::v8::systems::OpticalTactilePluginPrivate*, gz::transport::v13::AdvertiseServiceOptions const&)::{lambda(gz::msgs::Boolean const&, gz::msgs::Empty&)#1}>::_M_invoke(std::_Any_data const&, gz::msgs::Boolean const&, gz::msgs::Empty&)
+#2    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x72c84bf190c3, in gz::sim::v8::systems::OpticalTactilePluginPrivate::Enable(gz::msgs::Boolean const&)
+#1    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x72c84bfb65e6, in gz::sim::v8::systems::optical_tactile_sensor::OpticalTactilePluginVisualization::RemoveNormalForcesAndContactsMarkers()
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x72c864f4ed85, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x18])

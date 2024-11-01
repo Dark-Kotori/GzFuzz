@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/sensors_system_battery/list_parameters --reptype gz.msgs.ParameterDeclarations --reqtype gz.msgs.Empty --req ''

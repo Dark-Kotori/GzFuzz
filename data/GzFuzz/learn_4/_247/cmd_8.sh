@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/force_torque/scene/info --reptype gz.msgs.Scene --reqtype gz.msgs.Empty --req ''

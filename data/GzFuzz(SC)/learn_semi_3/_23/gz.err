@@ -1,0 +1,10 @@
+Stack trace (most recent call last) in thread 1909264:
+#7    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#6    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76119232684f, in 
+#5    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x761192294ac2, in 
+#4    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x76118dcdc252, in 
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x76118c9e6118, in 
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x76118c9e5d2a, in 
+#1    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-joint-state-publisher-system.so", at 0x76117c461076, in gz::sim::v8::systems::JointStatePublisher::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#0    Object "/home/liyitao/workspace/install/lib/libgz-sim8-gui.so.8", at 0x76118cf2a232, in google::protobuf::internal::ArenaStringPtr::CreateInstance(google::protobuf::Arena*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*)
+Segmentation fault (Address not mapped to object [0x8])

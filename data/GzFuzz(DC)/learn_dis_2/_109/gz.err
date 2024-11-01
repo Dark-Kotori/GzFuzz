@@ -1,0 +1,10 @@
+Stack trace (most recent call last) in thread 2154656:
+#7    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#6    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x766f1952684f, in 
+#5    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x766f19494ac2, in 
+#4    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x766f14edc252, in 
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x766f13be6118, in 
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x766f13be5d2a, in 
+#1    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x766f02b402f1, in gz::sim::v8::systems::AckermannSteering::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#0    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x766f02b36fe1, in gz::sim::v8::systems::AckermannSteeringPrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+Segmentation fault (Address not mapped to object [(nil)])

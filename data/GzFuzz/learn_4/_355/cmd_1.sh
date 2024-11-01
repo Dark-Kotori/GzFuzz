@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/nested_model_joint_positions/get_parameter --reptype gz.msgs.ParameterValue --reqtype gz.msgs.ParameterName --req 'name: "b"'

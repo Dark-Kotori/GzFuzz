@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/environmental_sensor_example/scene/info --reptype gz.msgs.Scene --reqtype gz.msgs.Empty --req ''

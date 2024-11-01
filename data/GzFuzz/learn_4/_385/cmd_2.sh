@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/world_with_spaces/gui/info --reptype gz.msgs.GUI --reqtype gz.msgs.Empty --req 'unused: true'

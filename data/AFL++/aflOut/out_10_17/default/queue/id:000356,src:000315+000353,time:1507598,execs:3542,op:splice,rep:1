@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <@hysics name="fast" type="ignored">
+      <real_time_factor>0</real_time_facto<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world nfme="default">
+    <physics name="fast" typ             </b   <real_time_factor>0</real_time_factor>
+    </physics>
+
+    <!-- Physics plugin to load meshes -->
+    <plugin
+      filename="gz-sim-physics-system"

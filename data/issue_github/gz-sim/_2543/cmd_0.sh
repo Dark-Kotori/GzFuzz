@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /optical_tactile_sensor/enable --reptype gz.msgs.Empty --reqtype gz.msgs.Boolean --req ''

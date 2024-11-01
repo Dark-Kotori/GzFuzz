@@ -1,0 +1,12 @@
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+Stack trace (most recent call last) in thread 2833361:
+#7    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#6    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f483412684f, in 
+#5    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f4834094ac2, in 
+#4    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7f482fadc252, in 
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7f482e7e6118, in 
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7f482e7e5d2a, in 
+#1    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7f48191362f1, in gz::sim::v8::systems::AckermannSteering::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#0    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7f481912cfe1, in gz::sim::v8::systems::AckermannSteeringPrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+Segmentation fault (Address not mapped to object [(nil)])

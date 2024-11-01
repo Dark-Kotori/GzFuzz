@@ -1,0 +1,18 @@
+Stack trace (most recent call last) in thread 237645:
+#15   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#14   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71b554f2684f, in 
+#13   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71b554e94ac2, in 
+#12   Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x71b5508dc252, in 
+#11   Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x71b54e113a67, in 
+#10   Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x71b54e113aa7, in 
+#9    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x71b54e113b1b, in 
+#8    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x71b54e113bed, in 
+#7    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x71b54e113c85, in 
+#6    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x71b54e103e15, in 
+#5    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-joint-state-publisher-system.so", at 0x71b4fe758181, in gz::sim::v8::systems::JointStatePublisher::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#4    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-joint-state-publisher-system.so", at 0x71b4fe75d674, in gz::msgs::Joint::set_name(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#3    Object "/home/momo/workspace/install/lib/libgz-msgs10.so.10", at 0x71b5499ca361, in gz::msgs::Joint::_internal_set_name(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#2    Object "/home/momo/workspace/install/lib/libgz-sim8-gui.so.8", at 0x71b54f36bdbb, in google::protobuf::internal::ArenaStringPtr::Set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, google::protobuf::Arena*)
+#1    Object "/home/momo/workspace/install/lib/libgz-sim8-gui.so.8", at 0x71b54f36c128, in google::protobuf::internal::ArenaStringPtr::CreateInstance(google::protobuf::Arena*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*)
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x71b55094f148, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x10])

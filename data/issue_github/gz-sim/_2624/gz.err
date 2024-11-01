@@ -1,0 +1,36 @@
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  unordered_map::at
+Stack trace (most recent call last):
+#31   Object "/data/play/robot/workspace/install/lib/libgz-sim9-gz.so.9.0.0~pre1", at 0x7310580bdc83, in runServer
+#30   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x7310569e1707, in gz::sim::v9::Server::Run(bool, unsigned long, bool)
+#29   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x731056a51bda, in 
+#28   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x731056a835f3, in gz::sim::v9::SimulationRunner::Run(unsigned long)
+#27   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x731056a845f8, in gz::sim::v9::SimulationRunner::Step(gz::sim::v9::UpdateInfo const&)
+#26   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x731056a80640, in gz::sim::v9::SimulationRunner::UpdateSystems()
+#25   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x731056af0c48, in gz::sim::v9::SystemManager::Reset(gz::sim::v9::UpdateInfo const&, gz::sim::v9::EntityComponentManager&)
+#24   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ab283c5, in 
+#23   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ab46cfa, in 
+#22   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ab3961f, in 
+#21   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102abfbab2, in void gz::sim::v9::EntityComponentManager::EachRemoved<gz::sim::v9::components::Component<gz::sim::v9::components::DetachableJointInfo, gz::sim::v9::components::DetachableJointTag, gz::sim::v9::serializers::DetachableJointInfoSerializer> >(gz::sim::v9::EntityComponentManager::identity<std::function<bool (unsigned long const&, gz::sim::v9::components::Component<gz::sim::v9::components::DetachableJointInfo, gz::sim::v9::components::DetachableJointTag, gz::sim::v9::serializers::DetachableJointInfoSerializer> const*)> >::type) const
+#20   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ac413fe, in 
+#19   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102acc2736, in 
+#18   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ad1c734, in 
+#17   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ab5c95e, in 
+#16   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ab687d3, in 
+#15   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ab7644b, in 
+#14   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102ab39303, in 
+#13   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x73102abfb963, in gz::physics::DetachJointFeature::Joint<gz::physics::FeaturePolicy<double, 3ul>, gz::sim::v9::systems::PhysicsPrivate::DetachableJointFeatureList>::Detach()
+#12   Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x73102551ce95, in 
+#11   Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x731025529fa5, in 
+#10   Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x731025462d94, in 
+#9    Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x731025462e7c, in 
+#8    Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x731025462f6b, in 
+#7    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x731058ea93d7, in std::__throw_out_of_range(char const*)
+#6    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x731058ebb127, in __cxa_throw
+#5    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x731058ea5a48, in std::terminate()
+#4    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x731058ebae9b, in 
+#3    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x731058ea5ffd, in 
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x73105e4288fe, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x73105e44526d, in gsignal
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x73105e49eb1c, in pthread_kill
+Aborted (Signal sent by tkill() 22573 1000)

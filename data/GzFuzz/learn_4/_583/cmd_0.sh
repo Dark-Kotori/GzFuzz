@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/camera_video_record_pendulum/system/info --reptype gz.msgs.EntityPlugin_V --reqtype gz.msgs.Empty --req 'unused: true'

@@ -1,0 +1,4 @@
+
+ODE INTERNAL ERROR 1: assertion "m_defaultThreadingImpl == NULL" failed in initializeDefaultThreading() [default_threading.cpp:47]
+
+ODE INTERNAL ERROR 1: assertion "m_defaultThreadingImpl == NULL" failed in initializeDefaultThreading() [default_threading.cpp:47]

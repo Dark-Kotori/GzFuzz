@@ -1,0 +1,2 @@
+Topic [world/fuel/model/Electrical Box/sensor/mic_1/detection] is not valid.
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: 1.0

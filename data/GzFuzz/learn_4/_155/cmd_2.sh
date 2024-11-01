@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/contact_extra_data/gui/info --reptype gz.msgs.GUI --reqtype gz.msgs.Empty --req ''

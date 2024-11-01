@@ -1,0 +1,28 @@
+Stack trace (most recent call last):
+#25   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#24   Object "gz sim /home/momo/workspace/exp/learn_1/_152/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x6261d10b81c4, in _start
+#23   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7af6d9029e3f, in __libc_start_main
+#22   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7af6d9029d8f, in 
+#21   Object "gz sim /home/momo/workspace/exp/learn_1/_152/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x6261d10b817e, in 
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7af6d94a8e19, in ruby_run_node
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7af6d94a5317, in 
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7af6d963a30c, in rb_vm_exec
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7af6d9634c96, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7af6d9631fc5, in 
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7af6d962fc34, in 
+#14   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7af6d928e44b, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7af6d95fd088, in rb_nogvl
+#12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7af6d928dd6b, in 
+#11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7af6d9268492, in 
+#10   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7af6d926be2d, in 
+#9    Object "/home/momo/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7af6d3dadd9d, in runServer
+#8    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7af6d22ace72, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#7    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7af6d22d6f5b, in 
+#6    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7af6d2307bb2, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#5    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7af6d23089d0, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#4    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7af6d2304d58, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#3    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-user-commands-system.so", at 0x7af682eace1f, in gz::sim::v8::systems::UserCommands::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#2    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-user-commands-system.so", at 0x7af682eb96b1, in gz::sim::v8::systems::DisableCollisionCommand::Execute()
+#1    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-user-commands-system.so", at 0x7af682ea8f02, in gz::sim::v8::systems::UserCommandsInterface::HasContactSensor(unsigned long)
+#0    Object "/home/momo/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7af6d3e44929, in gz::sim::v8::components::Component<unsigned long, gz::sim::v8::components::ParentEntityTag, gz::sim::v8::serializers::DefaultSerializer<unsigned long> >::Component(gz::sim::v8::components::Component<unsigned long, gz::sim::v8::components::ParentEntityTag, gz::sim::v8::serializers::DefaultSerializer<unsigned long> > const&)
+Segmentation fault (Address not mapped to object [0x8])

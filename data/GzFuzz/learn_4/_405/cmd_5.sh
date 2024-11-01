@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/multi_lrauv/system/info --reptype gz.msgs.EntityPlugin_V --reqtype gz.msgs.Empty --req ''

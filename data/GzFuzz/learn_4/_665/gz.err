@@ -1,0 +1,14 @@
+Stack trace (most recent call last) in thread 2983734:
+#11   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#10   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7bcc3ef2684f, in 
+#9    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7bcc3ee94ac2, in 
+#8    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7bcc3a8dc252, in 
+#7    Object "/home/liyitao/workspace/install/lib/libgz-common5.so.5", at 0x7bcc3e2e0d4d, in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (gz::common::WorkerPool::Implementation::*)(), gz::common::WorkerPool::Implementation*> > >::_M_run()
+#6    Object "/home/liyitao/workspace/install/lib/libgz-common5.so.5", at 0x7bcc3e2dfec0, in gz::common::WorkerPool::Implementation::Worker()
+#5    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7bcc395cca69, in 
+#4    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7bcc395f043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7bcc395ef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7bcc395e1d81, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#1    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-multicopter-motor-model-system.so", at 0x7bcc286717cc, in gz::sim::v8::systems::MulticopterMotorModel::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7bcc3a94bf9c, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x10])

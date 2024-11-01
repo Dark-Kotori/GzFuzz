@@ -1,0 +1,15 @@
+Stack trace (most recent call last) in thread 132562:
+#12   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#11   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7fbfdcb2f84f, in 
+#10   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7fbfdca9dac2, in 
+#9    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7fbfd87da252, in 
+#8    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fbfd643e21d, in 
+#7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fbfd643e25d, in 
+#6    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fbfd643e2d1, in 
+#5    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fbfd643e3a3, in 
+#4    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fbfd643e43b, in 
+#3    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7fbfd642de77, in 
+#2    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x7fbf9751045c, in gz::sim::v8::systems::OpticalTactilePlugin::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#1    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x7fbf975148c4, in gz::sim::v8::systems::OpticalTactilePluginPrivate::ComputeNormalForces(gz::msgs::PointCloudPacked const&, bool)
+#0    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-opticaltactileplugin-system.so", at 0x7fbf97513c99, in gz::sim::v8::systems::OpticalTactilePluginPrivate::MapPointCloudData(unsigned long const&, unsigned long const&, char const*)
+Segmentation fault (Invalid permissions for mapped object [0x7fbed9629ae6])

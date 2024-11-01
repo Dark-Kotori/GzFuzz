@@ -1,0 +1,14 @@
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: -
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: 1.0
+Stack trace (most recent call last) in thread 3578841:
+#9    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#8    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x70ba4e12684f, in 
+#7    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x70ba4e094ac2, in 
+#6    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x70ba49adc252, in 
+#5    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x70ba48554c50, in 
+#4    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x70ba48554133, in 
+#3    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-tracked-vehicle-system.so", at 0x70ba350dea2d, in non-virtual thunk to gz::sim::v8::systems::TrackedVehicle::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#2    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-tracked-vehicle-system.so", at 0x70ba350d9e4d, in gz::sim::v8::systems::TrackedVehiclePrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#1    Object "/home/qiguanxiao/workspace/install/lib/libgz-math7.so.7", at 0x70ba4b393068, in gz::math::v7::SpeedLimiter::Limit(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+#0    Object "/home/qiguanxiao/workspace/install/lib/libgz-math7.so.7", at 0x70ba4b392ec4, in gz::math::v7::SpeedLimiter::LimitJerk(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+Segmentation fault (Address not mapped to object [(nil)])

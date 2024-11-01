@@ -1,0 +1,29 @@
+Stack trace (most recent call last):
+#26   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#25   Object "gz sim /home/momo/workspace/exp/random_large_1/_51/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x623458b991c4, in _start
+#24   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7ed42d629e3f, in __libc_start_main
+#23   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7ed42d629d8f, in 
+#22   Object "gz sim /home/momo/workspace/exp/random_large_1/_51/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x623458b9917e, in 
+#21   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7ed42daa8e19, in ruby_run_node
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7ed42daa5317, in 
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7ed42dc3a30c, in rb_vm_exec
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7ed42dc34c96, in 
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7ed42dc31fc5, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7ed42dc2fc34, in 
+#15   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7ed42d8d844b, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7ed42dbfd088, in rb_nogvl
+#13   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7ed42d8d7d6b, in 
+#12   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7ed42d8b2492, in 
+#11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7ed42d8b5e2d, in 
+#10   Object "/home/momo/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7ed4283add9d, in runServer
+#9    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7ed4268ace72, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#8    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7ed4268d6f5b, in 
+#7    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7ed426907bb2, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#6    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7ed4269089d0, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#5    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7ed426904d58, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#4    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-linearbatteryplugin-system.so", at 0x7ed3d49ab86f, in gz::sim::v8::systems::LinearBatteryPlugin::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#3    Object "/home/momo/workspace/install/lib/libgz-common5.so.5", at 0x7ed4239b53e7, in gz::common::Battery::SetPowerLoad(unsigned int, double)
+#2    Object "/home/momo/workspace/install/lib/libgz-common5.so.5", at 0x7ed4239b73a9, in std::unique_ptr<gz::common::Battery::Implementation, void (*)(gz::common::Battery::Implementation*)>::operator->() const
+#1    Object "/home/momo/workspace/install/lib/libgz-common5.so.5", at 0x7ed4239b8aa9, in std::unique_ptr<gz::common::Battery::Implementation, void (*)(gz::common::Battery::Implementation*)>::get() const
+#0    Object "/home/momo/workspace/install/lib/libgz-common5.so.5", at 0x7ed4239ba52c, in std::__uniq_ptr_impl<gz::common::Battery::Implementation, void (*)(gz::common::Battery::Implementation*)>::_M_ptr() const
+Segmentation fault (Address not mapped to object [0x10])

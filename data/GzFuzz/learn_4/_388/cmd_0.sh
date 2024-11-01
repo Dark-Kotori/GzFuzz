@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/camera_video_record_pendulum/list_parameters --reptype gz.msgs.ParameterDeclarations --reqtype gz.msgs.Empty --req ''

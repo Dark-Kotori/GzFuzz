@@ -1,0 +1,37 @@
+[Err] [EntityComponentManager.cc:1083] Trying to create a component of type [9904571861011273795] attached to entity [100], but this entity does not exist. This create component request will be ignored.
+[Err] [LinearBatteryPlugin.cc:219] Linear battery plugin should be attached to a model entity. Failed to initialize.
+
+Stack trace (most recent call last):
+#31   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f9b3ef24e3f, in __libc_start_main
+#30   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f9b3ef24d8f, in
+#29   Object "gz sim server", at 0x5562e6baf17e, in
+#28   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f1cce19, in ruby_run_node
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f1c9317, in
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f35e33c, in rb_vm_exec
+#25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f358cc6, in
+#24   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f355ff5, in
+#23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f353c64, in
+#22   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f29fa4e, in
+#21   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f1ca9ac, in rb_protect
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f362c91, in rb_yield
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f35e33c, in rb_vm_exec
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f358cc6, in
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f355ff5, in
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f353c64, in
+#15   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f9b3af0144b, in
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f9b3f3210b8, in rb_nogvl
+#13   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f9b3af00d6b, in
+#12   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f9b3aef2492, in
+#11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f9b3aef5e2d, in
+#10   Object "/data/play/robot/workspace/install/lib/libgz-sim8-gz.so.8.6.0", at 0x7f9b3a249d7d, in runServer
+#9    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f9b3890356a, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#8    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f9b3892efdf, in
+#7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f9b3895fd84, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#6    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f9b38960ba2, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#5    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f9b3895cf2a, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#4    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-linearbatteryplugin-system.so", at 0x7f9afa04d8ef, in gz::sim::v8::systems::LinearBatteryPlugin::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#3    Object "/home/ren/play/robot/workspace/install/lib/libgz-common5.so.5", at 0x7f9b35c0a3e7, in gz::common::Battery::SetPowerLoad(unsigned int, double)
+#2    Object "/home/ren/play/robot/workspace/install/lib/libgz-common5.so.5", at 0x7f9b35c0c3a9, in std::unique_ptr<gz::common::Battery::Implementation, void (*)(gz::common::Battery::Implementation*)>::operator->() const
+#1    Object "/home/ren/play/robot/workspace/install/lib/libgz-common5.so.5", at 0x7f9b35c0daa9, in std::unique_ptr<gz::common::Battery::Implementation, void (*)(gz::common::Battery::Implementation*)>::get() const
+#0    Object "/home/ren/play/robot/workspace/install/lib/libgz-common5.so.5", at 0x7f9b35c0f52c, in std::__uniq_ptr_impl<gz::common::Battery::Implementation, void (*)(gz::common::Battery::Implementation*)>::_M_ptr() const
+Segmentation fault (Address not mapped to object [0x10])

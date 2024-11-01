@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/home/qiguanxiao/workspace/build/gz-sim8/bin/UNIT_Server_TEST
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@
+AFL_CUSTOM_INFO_OUT=/home/qiguanxiao/Desktop/work/AFLOut/out_10_10_2//default
+# command line:
+'afl-fuzz' '-m' '5000' '-t' '3000' '-i' '/home/qiguanxiao/Desktop/work/models' '-o' '/home/qiguanxiao/Desktop/work/AFLOut/out_10_10_2/' '/home/qiguanxiao/workspace/build/gz-sim8/bin/UNIT_Server_TEST' '@@'

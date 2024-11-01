@@ -1,0 +1,1 @@
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Double: 1:1: Expected identifier, got: 465150.7

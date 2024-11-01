@@ -1,0 +1,28 @@
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+Stack trace (most recent call last):
+#23   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#22   Object "gz sim /home/liyitao/workspace/exp/learn_2/_721/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5e682f5bf1c4, in _start
+#21   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f8ac5c29e3f, in __libc_start_main
+#20   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f8ac5c29d8f, in 
+#19   Object "gz sim /home/liyitao/workspace/exp/learn_2/_721/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5e682f5bf17e, in 
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f8ac60a8e19, in ruby_run_node
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f8ac60a5317, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f8ac623a30c, in rb_vm_exec
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f8ac6234c96, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f8ac6231fc5, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f8ac622fc34, in 
+#12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f8ac638544b, in 
+#11   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f8ac61fd088, in rb_nogvl
+#10   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f8ac6384d6b, in 
+#9    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f8ac5e93492, in 
+#8    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f8ac5e96e2d, in 
+#7    Object "/home/liyitao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7f8ac517e92f, in runServer
+#6    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7f8ac03bd721, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#5    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7f8ac03d0f8f, in 
+#4    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7f8ac03f043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7f8ac03ef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7f8ac03e1d81, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#1    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-multicopter-motor-model-system.so", at 0x7f8aaa4aa7cc, in gz::sim::v8::systems::MulticopterMotorModel::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7f8ac174bf9c, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x10])

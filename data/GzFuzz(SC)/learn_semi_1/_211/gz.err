@@ -1,0 +1,25 @@
+Stack trace (most recent call last):
+#22   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#21   Object "gz sim /home/liyitao/workspace/exp/learn_semi_1/_211/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x653ad9e3c1c4, in _start
+#20   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x79071ca29e3f, in __libc_start_main
+#19   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x79071ca29d8f, in 
+#18   Object "gz sim /home/liyitao/workspace/exp/learn_semi_1/_211/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x653ad9e3c17e, in 
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x79071cea8e19, in ruby_run_node
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x79071cea5317, in 
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x79071d03a30c, in rb_vm_exec
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x79071d034c96, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x79071d031fc5, in 
+#12   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x79071d02fc34, in 
+#11   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x79071cc3844b, in 
+#10   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x79071cffd088, in rb_nogvl
+#9    Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x79071cc37d6b, in 
+#8    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x79071c8da492, in 
+#7    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x79071c8dde2d, in 
+#6    Object "/home/liyitao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x79071bf7e92f, in runServer
+#5    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7907171bd721, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#4    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7907171d0f8f, in 
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7907171f043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7907171ef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#1    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7907171e1d81, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#0    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-follow-actor-system.so", at 0x79070765b3a2, in gz::sim::v8::systems::FollowActor::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+Segmentation fault (Address not mapped to object [0x10])

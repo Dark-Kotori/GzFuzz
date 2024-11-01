@@ -1,0 +1,35 @@
+gz sim server: ./dart/dynamics/RevoluteJoint.cpp:186: virtual void dart::dynamics::RevoluteJoint::updateRelativeTransform() const: Assertion `math::verifyTransform(mT)' failed.
+Stack trace (most recent call last):
+#31   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x78755f0545db, in 
+#30   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x78755f0500fe, in 
+#29   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x78755f04d8ef, in 
+#28   Object "/usr/lib/x86_64-linux-gnu/ruby/3.2.0/fiddle.so", at 0x78755ec27b13, in 
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x78755f0163bb, in rb_nogvl
+#26   Object "/usr/lib/x86_64-linux-gnu/ruby/3.2.0/fiddle.so", at 0x78755ec2743b, in 
+#25   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x78755ecfa0bd, in ffi_call
+#24   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x78755ecf73ee, in 
+#23   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x78755ecfab15, in 
+#22   Object "/data/play/robot/workspace/install/lib/libgz-sim9-gz.so.9.0.0~pre1", at 0x7875586bdc83, in runServer
+#21   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x787556fe1707, in gz::sim::v9::Server::Run(bool, unsigned long, bool)
+#20   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x787557051bda, in 
+#19   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x7875570835f3, in gz::sim::v9::SimulationRunner::Run(unsigned long)
+#18   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x7875570845f8, in gz::sim::v9::SimulationRunner::Step(gz::sim::v9::UpdateInfo const&)
+#17   Object "/data/play/robot/workspace/install/lib/libgz-sim9.so.9", at 0x787557080ab4, in gz::sim::v9::SimulationRunner::UpdateSystems()
+#16   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x78752ab27f33, in 
+#15   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x78752ab4720b, in 
+#14   Object "/data/play/robot/workspace/install/lib/gz-sim-9/plugins/libgz-sim-physics-system.so", at 0x78752ac07414, in 
+#13   Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7875255de7c8, in 
+#12   Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7875255e69e5, in 
+#11   Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7875255ea19e, in 
+#10   Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7875255eeead, in 
+#9    Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7875255f3030, in 
+#8    Object "/data/play/robot/workspace/install/lib/gz-physics-8/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7875255dec1d, in 
+#7    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x78752483cbd2, in dart::dynamics::Frame::getWorldTransform() const
+#6    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x787524888821, in dart::dynamics::Joint::getRelativeTransform() const
+#5    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7875248e0725, in dart::dynamics::RevoluteJoint::updateRelativeTransform() const
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x78755ea3b506, in __assert_fail
+#3    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x78755ea2881a, in 
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x78755ea288fe, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x78755ea4526d, in gsignal
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x78755ea9eb1c, in pthread_kill
+Aborted (Signal sent by tkill() 599683 1000)

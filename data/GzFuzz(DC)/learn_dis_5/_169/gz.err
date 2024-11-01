@@ -1,0 +1,13 @@
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: 520022.8
+Stack trace (most recent call last) in thread 2361774:
+#9    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#8    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x75be1d32684f, in 
+#7    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x75be1d294ac2, in 
+#6    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x75be18cdc252, in 
+#5    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x75be17754c50, in 
+#4    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x75be17754133, in 
+#3    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x75be04adfdd1, in gz::sim::v8::systems::AckermannSteering::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#2    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x75be04ac7144, in gz::sim::v8::systems::AckermannSteeringPrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#1    Object "/home/qiguanxiao/workspace/install/lib/libgz-math7.so.7", at 0x75be1a57b068, in gz::math::v7::SpeedLimiter::Limit(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+#0    Object "/home/qiguanxiao/workspace/install/lib/libgz-math7.so.7", at 0x75be1a57aec4, in gz::math::v7::SpeedLimiter::LimitJerk(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+Segmentation fault (Address not mapped to object [(nil)])

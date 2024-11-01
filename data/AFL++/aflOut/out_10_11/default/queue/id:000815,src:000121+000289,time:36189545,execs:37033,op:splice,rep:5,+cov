@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version=1.6">
+  <world name="imu_sensor">
+    <graaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavity>0 0 -5</gravity>
+    <physics name="1ms" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>0</real<?xml imagesWithBuiltinSDF</topic>
+  version="1.0"?>
+<sdf version="1.6">
+  <model name="m1">
+    <link name="link1">
+      <sensor name="boundingbox_camera" type="boundingbox_camera">
+        <update_rate>10</update_rate>
+        <topic>/test/integration/TriggeredBBCameraPlugin_imagesWithBuiltinSDF</topic>
+        <camera>
+          <triggered>truer_topic>red>
+          <trigger_topic>/test/integration/Triggion="1.0" ?>
+<sdf versioeredBBCameraPlugin_imagesWithBuiltinSDF/trigger</trigger_topic>
+          <horizontal_fov>1.05</horizontal_fov>
+          <image>
+            <width>320</wid

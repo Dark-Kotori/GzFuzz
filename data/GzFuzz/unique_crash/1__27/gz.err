@@ -1,0 +1,14 @@
+Stack trace (most recent call last) in thread 320801:
+#11   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#10   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7b081352684f, in 
+#9    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7b0813494ac2, in 
+#8    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7b080eedc252, in 
+#7    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7b080c713a67, in 
+#6    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7b080c713aa7, in 
+#5    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7b080c713b1b, in 
+#4    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7b080c713bed, in 
+#3    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7b080c713c85, in 
+#2    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x7b080c703e15, in 
+#1    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7b07bb77b949, in gz::sim::v8::systems::AckermannSteering::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#0    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7b07bb77dd24, in gz::sim::v8::systems::AckermannSteeringPrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+Segmentation fault (Address not mapped to object [(nil)])

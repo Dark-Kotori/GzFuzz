@@ -1,0 +1,34 @@
+
+ODE INTERNAL ERROR 1: assertion "m_defaultThreadingImpl == NULL" failed in initializeDefaultThreading() [default_threading.cpp:47]
+Stack trace (most recent call last) in thread 172572:
+#29   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#28   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7dbd8832684f, in 
+#27   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7dbd88294ac2, in 
+#26   Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7dbd83cdc252, in 
+#25   Object "/home/qiguanxiao/workspace/install/lib/libgz-common5.so.5", at 0x7dbd83fae15d, in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (gz::common::WorkerPool::Implementation::*)(), gz::common::WorkerPool::Implementation*> > >::_M_run()
+#24   Object "/home/qiguanxiao/workspace/install/lib/libgz-common5.so.5", at 0x7dbd83fab09b, in gz::common::WorkerPool::Implementation::Worker()
+#23   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7dbd82702e51, in 
+#22   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7dbd8276f01a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#21   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7dbd8276cdc8, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#20   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7dbd8274a3fe, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#19   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7dbd64621e95, in gz::sim::v8::systems::Physics::Update(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#18   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7dbd645e1401, in gz::sim::v8::systems::PhysicsPrivate::CreatePhysicsEntities(gz::sim::v8::EntityComponentManager const&, bool)
+#17   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7dbd645e114f, in gz::sim::v8::systems::PhysicsPrivate::CreateWorldEntities(gz::sim::v8::EntityComponentManager const&, bool)
+#16   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7dbd6489c54b, in void gz::sim::v8::EntityComponentManager::EachNew<gz::sim::v8::components::Component<std::add_lvalue_reference<void>, gz::sim::v8::components::WorldTag, gz::sim::v8::serializers::DefaultSerializer<std::add_lvalue_reference<void> > >, gz::sim::v8::components::Component<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, gz::sim::v8::components::NameTag, gz::sim::v8::serializers::StringSerializer>, gz::sim::v8::components::Component<gz::math::v7::Vector3<double>, gz::sim::v8::components::GravityTag, gz::sim::v8::serializers::DefaultSerializer<gz::math::v7::Vector3<double> > > >(gz::sim::v8::EntityComponentManager::identity<std::function<bool (unsigned long const&, gz::sim::v8::components::Component<std::add_lvalue_reference<void>, gz::sim::v8::components::WorldTag, gz::sim::v8::serializers::DefaultSerializer<std::add_lvalue_reference<void> > > const*, gz::sim::v8::components::Component<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, gz::sim::v8::components::NameTag, gz::sim::v8::serializers::StringSerializer> const*, gz::sim::v8::components::Component<gz::math::v7::Vector3<double>, gz::sim::v8::components::GravityTag, gz::sim::v8::serializers::DefaultSerializer<gz::math::v7::Vector3<double> > > const*)> >::type) const
+#15   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7dbd646089d8, in 
+#14   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7dbd64607192, in 
+#13   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7dbd647357bd, in gz::physics::sdf::ConstructSdfWorld::Engine<gz::physics::FeaturePolicy<double, 3ul>, gz::sim::v8::systems::PhysicsPrivate::MinimumFeatureList>::ConstructWorld(sdf::v14::World const&)
+#12   Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7dbd3eab8748, in virtual thunk to gz::physics::dartsim::SDFFeatures::ConstructSdfWorld(gz::physics::Identity const&, sdf::v14::World const&)
+#11   Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7dbd3eab6df9, in gz::physics::dartsim::SDFFeatures::ConstructSdfWorld(gz::physics::Identity const&, sdf::v14::World const&)
+#10   Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7dbd3e9f9a0e, in gz::physics::dartsim::EntityManagementFeatures::ConstructEmptyWorld(gz::physics::Identity const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#9    Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7dbd3ea3cf5a, in dart::collision::GzOdeCollisionDetector::create()
+#8    Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7dbd3ea3cecc, in dart::collision::GzOdeCollisionDetector::GzOdeCollisionDetector()
+#7    Object "/lib/x86_64-linux-gnu/libdart-collision-ode.so.6.13", at 0x7dbd71089389, in dart::collision::OdeCollisionDetector::OdeCollisionDetector()
+#6    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x7dbd7066e5dc, in dInitODE2
+#5    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x7dbd7066e55d, in 
+#4    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x7dbd706514ff, in DefaultThreadingHolder::initializeDefaultThreading()
+#3    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x7dbd706517b7, in dDebug
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7dbd882287f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7dbd88242475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7dbd882969fc, in pthread_kill
+Aborted (Signal sent by tkill() 172568 1000)

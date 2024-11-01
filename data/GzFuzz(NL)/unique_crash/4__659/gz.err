@@ -1,0 +1,28 @@
+Stack trace (most recent call last):
+#25   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#24   Object "gz sim /home/momo/workspace/exp/random_large_1/_659/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5d856a1191c4, in _start
+#23   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x73ab08229e3f, in __libc_start_main
+#22   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x73ab08229d8f, in 
+#21   Object "gz sim /home/momo/workspace/exp/random_large_1/_659/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5d856a11917e, in 
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73ab086a8e19, in ruby_run_node
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73ab086a5317, in 
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73ab0883a30c, in rb_vm_exec
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73ab08834c96, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73ab08831fc5, in 
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73ab0882fc34, in 
+#14   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x73ab0898e44b, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73ab087fd088, in rb_nogvl
+#12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x73ab0898dd6b, in 
+#11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x73ab0897f492, in 
+#10   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x73ab08982e2d, in 
+#9    Object "/home/momo/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x73ab02fadd9d, in runServer
+#8    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x73ab014ace72, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#7    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x73ab014d6f5b, in 
+#6    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x73ab01507bb2, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#5    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x73ab015089d0, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#4    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x73ab01504d58, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#3    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-logicalaudiosensorplugin-system.so", at 0x73aaab9c8deb, in gz::sim::v8::systems::LogicalAudioSensorPlugin::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#2    Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-logicalaudiosensorplugin-system.so", at 0x73aaab9d0d63, in gz::sim::v8::systems::LogicalAudioSensorPluginPrivate::DurationExceeded(gz::sim::v8::UpdateInfo const&, gz::sim::v8::logical_audio::SourcePlayInfo const&)
+#1    Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x73ab0153f2c8, in std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+#0    Object "/home/momo/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x73ab02fd7d56, in std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+Segmentation fault (Address not mapped to object [0x18])

@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/log_pendulum/state --reptype gz.msgs.SerializedStepMap --reqtype gz.msgs.Empty --req 'unused: true'

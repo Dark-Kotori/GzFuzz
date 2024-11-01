@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/center_of_volume/get_parameter --reptype gz.msgs.ParameterValue --reqtype gz.msgs.ParameterName --req ''

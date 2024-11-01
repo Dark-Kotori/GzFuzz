@@ -1,0 +1,36 @@
+
+ODE INTERNAL ERROR 1: assertion "aabbBound >= dMinIntExact && aabbBound < dMaxIntExact" failed in collide() [collision_space.cpp:460]
+Stack trace (most recent call last):
+#31   Object "gz sim /home/momo/workspace/exp/random_large_1/_1033/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5a16a70c017e, in 
+#30   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7477610a8e19, in ruby_run_node
+#29   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7477610a5317, in 
+#28   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x74776123a30c, in rb_vm_exec
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x747761234c96, in 
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x747761231fc5, in 
+#25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x74776122fc34, in 
+#24   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7477613a744b, in 
+#23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7477611fd088, in rb_nogvl
+#22   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7477613a6d6b, in 
+#21   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x747761381492, in 
+#20   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x747761384e2d, in 
+#19   Object "/home/momo/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x74775b9add9d, in runServer
+#18   Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x747759eace72, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#17   Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x747759ed6f5b, in 
+#16   Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x747759f07bb2, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#15   Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x747759f089d0, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#14   Object "/home/momo/workspace/install/lib/libgz-sim8.so.8", at 0x747759f04ebb, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#13   Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x74771483d279, in gz::sim::v8::systems::Physics::Update(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#12   Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x74771485b525, in gz::sim::v8::systems::PhysicsPrivate::Step(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+#11   Object "/home/momo/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x747714915da8, in gz::physics::ForwardStep::World<gz::physics::FeaturePolicy<double, 3ul>, gz::sim::v8::systems::PhysicsPrivate::MinimumFeatureList>::Step(gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::CompositeData&, gz::physics::ExpectData<gz::physics::ApplyExternalForceTorques, gz::physics::ApplyGeneralizedForces, gz::physics::VelocityControlCommands, gz::physics::ServoControlCommands, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+#10   Object "/home/momo/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x74770cf15f27, in gz::physics::dartsim::SimulationFeatures::WorldForwardStep(gz::physics::Identity const&, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::CompositeData&, gz::physics::ExpectData<gz::physics::ApplyExternalForceTorques, gz::physics::ApplyGeneralizedForces, gz::physics::VelocityControlCommands, gz::physics::ServoControlCommands, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+#9    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x74770b3936d3, in dart::simulation::World::step(bool)
+#8    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x74770b378ca5, in dart::constraint::ConstraintSolver::solve()
+#7    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x74770b377494, in dart::constraint::ConstraintSolver::updateConstraints()
+#6    Object "/home/momo/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x74770ce3a669, in dart::collision::GzOdeCollisionDetector::collide(dart::collision::CollisionGroup*, dart::collision::CollisionOption const&, dart::collision::CollisionResult*)
+#5    Object "/lib/x86_64-linux-gnu/libdart-collision-ode.so.6.13", at 0x747746900d1b, in dart::collision::OdeCollisionDetector::collide(dart::collision::CollisionGroup*, dart::collision::CollisionOption const&, dart::collision::CollisionResult*)
+#4    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x747745f1e266, in dxHashSpace::collide(void*, void (*)(void*, dxGeom*, dxGeom*))
+#3    Object "/lib/x86_64-linux-gnu/libode.so.8", at 0x747745f267b7, in dDebug
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x747760c287f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x747760c42475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x747760c969fc, in pthread_kill
+Aborted (Signal sent by tkill() 1695463 1000)

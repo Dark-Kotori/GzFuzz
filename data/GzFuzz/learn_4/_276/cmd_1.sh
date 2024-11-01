@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/triggered_publisher/state --reptype gz.msgs.SerializedStepMap --reqtype gz.msgs.Empty --req ''

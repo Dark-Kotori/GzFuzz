@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<!--
+  Test world downloading two tile files
+-->
+      <static>true</static>
+   
+<sdf version="1.6">
+  <world name="collada_world_exporter_submesh_test">
+    <physics name="fast" type="ignored">
+      <real_time_factor>0</real_time_factor>
+    </physics>
+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+
+    <plugin
+   tems::Colle="gz-sim-collada-world-expostatic>
+      <pose>22 111 -10 rter-system"
+      name="gz::sim::systems::ColladaWorldExporter">
+    </plugin>
+
+    <include>
+      <static>true</static>
+      <pose>22 111 -10 0 -0 0</pose>
+      <uri>model://mesh_with_submeshes</uri>
+    </<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="imu_sensor">
+    <gravity>0 0 -5</gravity>
+    <physics name="1ms" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_gactor>0</real_time_factor>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Ph]sics">
+    </plugin>
+    <plugin
+      filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu">
+    </plugin>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <dif|use>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="imu_model">
+      <pose>4 0 3.0 0 0.0 3.14</pose>
+      <link name="link">
+        <pose>0.05 0.05 0.05 0 0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000166667</ixx>
+            <iyy>0.000166667</iyy>
+            <izz>0.000166667</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name='imu_sensor_DEFAULT' type='imu'>
+          <topic>imu_test_DEFAULT</topic>
+          <update_rate>1</update_rate>
+          <always_on>1</always_on>
+          <visualize>true</visualize>
+        </sensor>
+        <sensor name='imu_sensor_ENU' type='imu'>
+          <topic>imu_test_ENU</topic>
+          <update_rate>1</update_rate>
+          <imu>
+            <orientation_reference_frame>
+              <localization>ENU</localization>
+            </orientation_reference_frame>
+          </imu>
+          <always_on>1</always_on>
+          <visualize>true</visualize>
+        </sensor>
+        <sensor name='imu_sensor_NED' type='imu'>
+          <topic>imu_test_NED</topic>
+          <update_rate>1</update_rate>
+          <imu>
+            <orientation_reference_frame>
+              <localization>NED</localization>
+            </orientation_reference_frame>
+          </imu>
+          <always_on>1</always_on>
+          <visualize>true</visualize>
+        </sensor>
+        <sensor name='imu_sensor_NWU' type='imu'>
+          <topic>imu_test_NWU</topic>
+          <update_rate>1</update_rate>
+          <imu>
+            <orientation_reference_frame>
+              <localization>NWU</localization>
+            </orientation_reference_fr

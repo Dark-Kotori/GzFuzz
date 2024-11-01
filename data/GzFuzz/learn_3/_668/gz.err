@@ -1,0 +1,38 @@
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+terminate called after throwing an instance of 'Ogre::RenderingAPIException'
+  what():  OGRE EXCEPTION(3:RenderingAPIException): Fragment Program 100000004PixelShader_ps failed to compile. See compile log above for details. in GLSLShader::compile at ./RenderSystems/GL3Plus/src/GLSL/OgreGLSLShader.cpp (line 361)
+Stack trace (most recent call last) in thread 27940:
+#31   Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7562a14dc252, in 
+#30   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x75628fc7509d, in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (gz::sim::v8::systems::SensorsPrivate::*)(), gz::sim::v8::systems::SensorsPrivate*> > >::_M_run()
+#29   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x75628fc73217, in gz::sim::v8::systems::SensorsPrivate::RenderThread()
+#28   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x75628fc6f5a6, in gz::sim::v8::systems::SensorsPrivate::RunOnce()
+#27   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x75628fc9c334, in void gz::sim::v8::EventManager::Emit<gz::common::EventT<void (), gz::sim::v8::events::PostRenderTag>>()
+#26   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-model-photo-shoot-system.so", at 0x75628f26c2cb, in std::_Function_handler<void (), std::_Bind<void (gz::sim::v8::systems::ModelPhotoShootPrivate::*(gz::sim::v8::systems::ModelPhotoShootPrivate*))()> >::_M_invoke(std::_Any_data const&)
+#25   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-model-photo-shoot-system.so", at 0x75628f26a69d, in gz::sim::v8::systems::ModelPhotoShootPrivate::PerformPostRenderingOperations()
+#24   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-model-photo-shoot-system.so", at 0x75628f269946, in gz::sim::v8::systems::ModelPhotoShootPrivate::SavePicture(std::shared_ptr<gz::rendering::v8::Camera>, gz::math::v7::Pose3<double> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+#23   Object "/home/liyitao/workspace/install/lib/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so", at 0x756251732591, in gz::rendering::v8::BaseCamera<gz::rendering::v8::Ogre2Sensor>::Capture(gz::rendering::v8::Image&)
+#22   Object "/home/liyitao/workspace/install/lib/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so", at 0x756251736c34, in gz::rendering::v8::BaseCamera<gz::rendering::v8::Ogre2Sensor>::Update()
+#21   Object "/home/liyitao/workspace/install/lib/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so", at 0x75625174b9ae, in virtual thunk to gz::rendering::v8::Ogre2Camera::Render()
+#20   Object "/home/liyitao/workspace/install/lib/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so", at 0x756251831095, in gz::rendering::v8::Ogre2RenderTarget::Render()
+#19   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x7562511fd6b3, in Ogre::CompositorWorkspace::_update(bool)
+#18   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x7562511ef934, in Ogre::CompositorNode::_update(Ogre::Camera const*, Ogre::SceneManager*)
+#17   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x756251207bf7, in Ogre::CompositorPassScene::execute(Ogre::Camera const*)
+#16   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x756250f74612, in Ogre::Camera::_renderScenePhase02(Ogre::Camera const*, unsigned char, unsigned char, bool)
+#15   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x7562511091e4, in Ogre::SceneManager::_renderPhase02(Ogre::Camera*, Ogre::Camera const*, unsigned char, unsigned char, bool)
+#14   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x7562510cd0ee, in Ogre::RenderQueue::render(Ogre::RenderSystem*, unsigned char, unsigned char, bool, bool)
+#13   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x7562510cbd74, in Ogre::RenderQueue::renderGL3(Ogre::RenderSystem*, bool, bool, Ogre::HlmsCache*, Ogre::RenderQueue::RenderQueueGroup const&, Ogre::IndirectBufferPacked*, unsigned char*, unsigned char*)
+#12   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextHlmsPbs.so.2.3.1", at 0x75628dfaf6a4, in Ogre::HlmsPbs::createShaderCacheEntry(unsigned int, Ogre::HlmsCache const&, unsigned int, Ogre::QueuedRenderable const&)
+#11   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x75628d58d328, in Ogre::GLSLMonolithicProgramManager::getActiveMonolithicProgram()
+#10   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x75628d58fada, in Ogre::GLSLMonolithicProgram::activate()
+#9    Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x75628d58f35d, in Ogre::GLSLMonolithicProgram::compileAndLink()
+#8    Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x75628d584697, in 
+#7    Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x75628d583296, in 
+#6    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7562a14ae4d7, in __cxa_throw
+#5    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7562a14ae276, in std::terminate()
+#4    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7562a14ae20b, in 
+#3    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7562a14a2b9d, in 
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7562a5a287f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7562a5a42475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7562a5a969fc, in pthread_kill
+Aborted (Signal sent by tkill() 27869 1002)

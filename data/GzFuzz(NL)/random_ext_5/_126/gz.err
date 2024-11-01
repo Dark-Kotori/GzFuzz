@@ -1,0 +1,19 @@
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.0463565. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 0.0463565. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.103509. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (5,3): 0.103509. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (4,4): 0.68264. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (5,4): 0.68264. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (3,0): 0.898797. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (4,1): 0.309552. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (5,2): 0.932742. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (0,3): 0.898797. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (1,4): 0.309552. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (2,5): 0.932742. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (3,1) and (4,0). They should sum to zero, but instead they sum to 1.27785 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (3,2) and (5,0). They should sum to zero, but instead they sum to 1.34345 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (4,2) and (5,1). They should sum to zero, but instead they sum to 1.68171 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (0,4) and (1,3). They should sum to zero, but instead they sum to 1.27785 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (0,5) and (2,3). They should sum to zero, but instead they sum to 1.34345 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (1,5) and (2,4). They should sum to zero, but instead they sum to 1.68171 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.

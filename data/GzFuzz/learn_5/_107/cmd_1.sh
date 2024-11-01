@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /model/red_box/sensor/source_1/stop --reptype gz.msgs.Boolean --reqtype gz.msgs.Empty --req ''

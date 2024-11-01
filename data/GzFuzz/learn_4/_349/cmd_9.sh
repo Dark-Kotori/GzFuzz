@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/logical_audio_sensor/gui/info --reptype gz.msgs.GUI --reqtype gz.msgs.Empty --req ''

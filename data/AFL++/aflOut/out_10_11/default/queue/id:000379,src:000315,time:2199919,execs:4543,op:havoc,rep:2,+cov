@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sdf version="load me <world nme="default">
+    <physics name="fast" ‹ype="ignored">
+      <real_time_factor>0</real_time_factor>
+    </physics>
+
+    <!-- Physics plugin to 1.6">
+ shes -->
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <include>
+      <uri>model://scheme_resource_uri</uri>
+    </include>
+  </world>
+</sdf>

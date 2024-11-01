@@ -1,0 +1,1 @@
+Node::Advertise(): Error advertising topic [addr2/rx]. Did you forget to start the discovery service?

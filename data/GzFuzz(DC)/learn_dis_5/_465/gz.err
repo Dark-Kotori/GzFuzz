@@ -1,0 +1,30 @@
+NodeShared::RecvSrvRequest() error sending response: Host unreachable
+Stack trace (most recent call last):
+#26   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#25   Object "gz sim /home/qiguanxiao/workspace/exp/learn_dis_2/_465/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x6202ee8ac1c4, in _start
+#24   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7c355ce29e3f, in __libc_start_main
+#23   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7c355ce29d8f, in 
+#22   Object "gz sim /home/qiguanxiao/workspace/exp/learn_dis_2/_465/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x6202ee8ac17e, in 
+#21   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7c355d2a8e19, in ruby_run_node
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7c355d2a5317, in 
+#19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7c355d43a30c, in rb_vm_exec
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7c355d434c96, in 
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7c355d431fc5, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7c355d42fc34, in 
+#15   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7c355d03c44b, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7c355d3fd088, in rb_nogvl
+#13   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7c355d03bd6b, in 
+#12   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7c355d02d492, in 
+#11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7c355d030e2d, in 
+#10   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7c355c2ed9f7, in runServer
+#9    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c35572cd25a, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#8    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c35573139d4, in 
+#7    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c355736f01a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#6    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c355736cdc8, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#5    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c355734a194, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#4    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-lift-drag-system.so", at 0x7c353ce74626, in gz::sim::v8::systems::LiftDrag::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#3    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-lift-drag-system.so", at 0x7c353ce70b42, in gz::sim::v8::systems::LiftDragPrivate::Load(gz::sim::v8::EntityComponentManager const&, std::shared_ptr<sdf::v14::Element> const&)
+#2    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c35570e094b, in std::pair<double, bool> sdf::v14::Element::Get<double>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double const&) const
+#1    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7c35570dfaeb, in 
+#0    Object "/home/qiguanxiao/workspace/install/lib/libsdformat14.so.14", at 0x7c3555c3bc77, in sdf::v14::Element::GetAttribute(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+Segmentation fault (Address not mapped to object [0x18])

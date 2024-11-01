@@ -1,0 +1,2 @@
+Epoch,Reward,Actor Loss,Critic Loss,Exploration Rate
+10,0.49769327979825007,46.932297975525394,0.9176929935625123,0.1

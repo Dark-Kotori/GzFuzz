@@ -1,0 +1,26 @@
+Stack trace (most recent call last):
+#23   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#22   Object "gz sim /home/liyitao/workspace/exp/learn_semi_1/_353/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5a7eb0e4c1c4, in _start
+#21   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7b1b7e829e3f, in __libc_start_main
+#20   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7b1b7e829d8f, in 
+#19   Object "gz sim /home/liyitao/workspace/exp/learn_semi_1/_353/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5a7eb0e4c17e, in 
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7b1b7eca8e19, in ruby_run_node
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7b1b7eca5317, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7b1b7ee3a30c, in rb_vm_exec
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7b1b7ee34c96, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7b1b7ee31fc5, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7b1b7ee2fc34, in 
+#12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7b1b7e6f644b, in 
+#11   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7b1b7edfd088, in rb_nogvl
+#10   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7b1b7e6f5d6b, in 
+#9    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7b1b7e6e7492, in 
+#8    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7b1b7e6eae2d, in 
+#7    Object "/home/liyitao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7b1b7dd5e92f, in runServer
+#6    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7b1b78fbd721, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#5    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7b1b78fd0f8f, in 
+#4    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7b1b78ff043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7b1b78fef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7b1b78fe1d81, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#1    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-logicalaudiosensorplugin-system.so", at 0x7b1b6f89c70f, in gz::sim::v8::systems::LogicalAudioSensorPlugin::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#0    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-logicalaudiosensorplugin-system.so", at 0x7b1b6f89c524, in gz::sim::v8::systems::LogicalAudioSensorPluginPrivate::DurationExceeded(gz::sim::v8::UpdateInfo const&, gz::sim::v8::logical_audio::SourcePlayInfo const&)
+Segmentation fault (Address not mapped to object [0x10])

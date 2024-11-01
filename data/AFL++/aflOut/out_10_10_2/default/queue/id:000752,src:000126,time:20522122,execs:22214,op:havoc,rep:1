@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <physics name="fs://fuel.gazebosid">
+      <real_time_factor>0</real_time_factor>
+    </physics>
+
+    <include>
+      <uri>httpast" type="ignorem.org/1.0/openrobotics/models/ground plane/1</uri>
+    </include>
+  </world>
+</sdf>

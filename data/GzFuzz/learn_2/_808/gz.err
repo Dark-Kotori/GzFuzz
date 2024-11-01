@@ -1,0 +1,34 @@
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (5,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.
+Stack trace (most recent call last):
+#23   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#22   Object "gz sim /home/liyitao/workspace/exp/learn_2/_808/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5921796251c4, in _start
+#21   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7892cc029e3f, in __libc_start_main
+#20   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7892cc029d8f, in 
+#19   Object "gz sim /home/liyitao/workspace/exp/learn_2/_808/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x59217962517e, in 
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7892cc4a8e19, in ruby_run_node
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7892cc4a5317, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7892cc63a30c, in rb_vm_exec
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7892cc634c96, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7892cc631fc5, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7892cc62fc34, in 
+#12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7892cbe9544b, in 
+#11   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7892cc5fd088, in rb_nogvl
+#10   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7892cbe94d6b, in 
+#9    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7892cc22e492, in 
+#8    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7892cc231e2d, in 
+#7    Object "/home/liyitao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7892cb50692f, in runServer
+#6    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7892c67bd721, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#5    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7892c67d0f8f, in 
+#4    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7892c67f043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#3    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7892c67ef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7892c67e1d81, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#1    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-multicopter-motor-model-system.so", at 0x7892b57b27cc, in gz::sim::v8::systems::MulticopterMotorModel::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7892c7b4bf9c, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x10])

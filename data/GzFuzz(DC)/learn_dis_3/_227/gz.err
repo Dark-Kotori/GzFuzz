@@ -1,0 +1,28 @@
+NodeShared::RecvSrvRequest() error sending response: Host unreachable
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: -
+Stack trace (most recent call last):
+#23   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#22   Object "gz sim /home/qiguanxiao/workspace/exp/learn_dis_1/_227/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5ca4ea9651c4, in _start
+#21   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7d2a45a29e3f, in __libc_start_main
+#20   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7d2a45a29d8f, in 
+#19   Object "gz sim /home/qiguanxiao/workspace/exp/learn_dis_1/_227/a.sdf --seed 12345 -v 0 -r -s --headless-rendering", at 0x5ca4ea96517e, in 
+#18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7d2a45ea8e19, in ruby_run_node
+#17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7d2a45ea5317, in 
+#16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7d2a4603a30c, in rb_vm_exec
+#15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7d2a46034c96, in 
+#14   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7d2a46031fc5, in 
+#13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7d2a4602fc34, in 
+#12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7d2a45c7644b, in 
+#11   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7d2a45ffd088, in rb_nogvl
+#10   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7d2a45c75d6b, in 
+#9    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7d2a45c4f492, in 
+#8    Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7d2a45c52e2d, in 
+#7    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7d2a44eed9f7, in runServer
+#6    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7d2a3fecd25a, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#5    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7d2a3ff139d4, in 
+#4    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7d2a3ff6f01a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#3    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7d2a3ff6cdc8, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#2    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7d2a3ff4a194, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#1    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-multicopter-motor-model-system.so", at 0x7d2a28f6817c, in gz::sim::v8::systems::MulticopterMotorModel::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#0    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7d2a4154bf9c, in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+Segmentation fault (Address not mapped to object [0x10])

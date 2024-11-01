@@ -1,0 +1,298 @@
+<sdf version='1.10'>
+  <world name='default'>
+    <physics name='fast' type='ignored'>
+      <real_time_factor>0</real_time_factor>
+      <max_step_size>0.001</max_step_size>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='model'>
+      <pose>7.3987582367434541 -7.0973352519422779 3.9311026872948176 0 0 0</pose>
+      <joint name='RR_velocity_control_world' type='fixed'>
+        <parent>world</parent>
+        <child>RR_velocity_control_link0</child>
+        <pose>0 0 0 0 0 0</pose>
+      </joint>
+      <link name='RR_velocity_control_link0'>
+        <collision name='RR_velocity_control_link0_collision_0'>
+          <geometry>
+            <sphere>
+              <radius>0.025000000000000001</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='RR_velocity_control_link0_visual_0'>
+          <geometry>
+            <sphere>
+              <radius>0.025000000000000001</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='RR_velocity_control_link1'>
+        <pose>0 0 0.099999999999999645 0 0 0</pose>
+        <collision name='RR_velocity_control_link1_collision_0'>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.20000000000000001</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <collision name='RR_velocity_control_link1_collision_1'>
+          <geometry>
+            <sphere>
+              <radius>0.012500000000000001</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='RR_velocity_control_link1_visual_0'>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.20000000000000001</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0 0.5 0 1</ambient>
+            <diffuse>0 0.800000012 0 1</diffuse>
+            <specular>0 0.800000012 0 1</specular>
+          </material>
+        </visual>
+        <visual name='RR_velocity_control_link1_visual_1'>
+          <pose relative_to='RR_velocity_control_joint1'>0 0 0.20000000000000001 0 0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.012500000000000001</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+          </material>
+        </visual>
+        <inertial>
+          <mass>0.10000000000000001</mass>
+          <inertia>
+            <ixx>0.00033579999999999998</ixx>
+            <iyy>0.00033579999999999998</iyy>
+            <izz>5.0000000000000004e-06</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+          <pose>0 0 0 0 0 0</pose>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='RR_velocity_control_link2'>
+        <pose>0 0 0.29999999999999982 0 0 0</pose>
+        <collision name='RR_velocity_control_link2_collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.20000000000000001</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='RR_velocity_control_link2_visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.01</radius>
+              <length>0.20000000000000001</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0 0.5 0 1</ambient>
+            <diffuse>0 0.800000012 0 1</diffuse>
+            <specular>0 0.800000012 0 1</specular>
+          </material>
+        </visual>
+        <inertial>
+          <mass>0.10000000000000001</mass>
+          <inertia>
+            <ixx>0.00033579999999999998</ixx>
+            <iyy>0.00033579999999999998</iyy>
+            <izz>5.0000000000000004e-06</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+          <pose>0 0 0 0 0 0</pose>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='RR_velocity_control_joint1' type='revolute'>
+        <pose>0 0 -0.10000000000000001 0 0 0</pose>
+        <parent>RR_velocity_control_link0</parent>
+        <child>RR_velocity_control_link1</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+        <dynamics>
+          <damping>0.02</damping>
+        </dynamics>
+      </joint>
+      <joint name='RR_velocity_control_joint2' type='revolute'>
+        <pose>0 0 -0.10000000000000003 0 0 0</pose>
+        <parent>RR_velocity_control_link1</parent>
+        <child>RR_velocity_control_link2</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+        <dynamics>
+          <damping>0.01</damping>
+        </dynamics>
+      </joint>
+      <plugin name='gz::sim::systems::JointTrajectoryController' filename='gz-sim-joint-trajectory-controller-system'>
+        <velocity_p_gain>0.6</velocity_p_gain>
+        <velocity_i_gain>175</velocity_i_gain>
+        <velocity_cmd_min>-10</velocity_cmd_min>
+        <velocity_cmd_max>10</velocity_cmd_max>
+        <velocity_p_gain>0.1</velocity_p_gain>
+        <velocity_i_gain>200</velocity_i_gain>
+        <velocity_cmd_min>-5</velocity_cmd_min>
+        <velocity_cmd_max>5</velocity_cmd_max>
+      </plugin>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+  </world>
+</sdf>

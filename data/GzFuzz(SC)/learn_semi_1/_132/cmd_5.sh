@@ -1,0 +1,7 @@
+gz service --timeout 10000 -s /world/lights/set_pose --reptype gz.msgs.Boolean --reqtype gz.msgs.Pose --req 'name: "sphere"
+position {
+  x: -7.339138660426832
+  y: 0.3031958081514219
+  z: 9.49625143201926
+}
+'

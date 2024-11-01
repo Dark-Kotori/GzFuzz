@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/air_pressure_sensor/state --reptype gz.msgs.SerializedStepMap --reqtype gz.msgs.Empty --req 'unused: true'

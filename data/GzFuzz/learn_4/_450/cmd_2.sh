@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/boundingbox_sensor/scene/graph --reptype gz.msgs.StringMsg --reqtype gz.msgs.Empty --req ''

@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/non_rendering_sensors/state --reptype gz.msgs.SerializedStepMap --reqtype gz.msgs.Empty --req ''

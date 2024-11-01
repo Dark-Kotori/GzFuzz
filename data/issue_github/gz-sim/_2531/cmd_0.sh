@@ -1,0 +1,1 @@
+gz topic -t /model/elevator/door_0/lidar -m gz.msgs.LaserScan -p ''

@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/fluid_added_mass/scene/info --reptype gz.msgs.Scene --reqtype gz.msgs.Empty --req ''

@@ -1,0 +1,9 @@
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (5,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 0.261666. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.
+[libprotobuf ERROR google/protobuf/text_format.cc:309] Error parsing text-format gz.msgs.Twist: 1:1: Expected identifier, got: 0.0

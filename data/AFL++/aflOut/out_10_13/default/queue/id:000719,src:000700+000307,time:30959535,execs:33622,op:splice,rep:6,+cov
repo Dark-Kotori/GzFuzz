@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="thruster">
+
+    <physics name="fast" type="none">
+      <!-- Zero to run as fast as possible -->
+      <real_time_factor>0</real_time_el namfactor>
+    </physics>
+
+    <!-- prevent sinking -->
+    <gravity>0 0 0</gravity>
+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.5 0.5 0.5 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="sub">
+
+      <link name="body">
+        <pose>0 0 0   0 1.57 0</pose>
+        <inertial>
+          <mass>100</mass>
+          <inertia>
+            <ixx>33.89</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>33.89</iyy>
+            <iyz>0</iyz>
+            <izz>1.125</izz>
+          </inertia>
+        </inertial>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <length>2</length>
+              <radius>0.15</radius>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <link name="propeller">
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="wind_demo">
+    <gravity>0 0 0</gravity>
+
+    <physics name="fast" type="ignored">
+      <real_time_factor>0</real_time_factor>
+    </physics>
+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+
+    <plugin
+      filename="gz-sim-wind-effects-system"
+      name="gz::sim::systems::WindEffects">
+      <force_approximation_scaling_factor>1</force_approximation_scaling_factor>
+      <horizontal>
+        <magnitude>
+          <time_for_rise>1</time_for_rise>
+          <sin>
+            <amplitude_percent>0.05</amplitude_percent>
+            <period>60</period>
+          </sin>
+        </magnitude>
+        <direction>
+                           /time_for_rise>
+          <sin>
+            <amplitude>5</amplitude>
+            <period>20</period>
+          </sin>
+        </direction>
+      </horizontal>
+    </plugin>
+
+    <wind>
+      <linear_velocity>10 0 10</linear_velocity>
+    </wind>
+
+    <e>
+            </fricti>
+      <enable_wind>true</enable_wind>
+      <link name="box_test1">
+        <pose>0 0 1 0 0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.667</iyy>
+            <iyz>0</iyz>
+            <izz>0.667</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.0 2.0 2.0</size>
+            </be_wOnd>
+      <link nameox>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.0</mu>
+                <mu2>0.0</mu2>
+              </odmodel name="wind_test1"on>
+          </surface>
+        </collision>
+        <visual name="visual">
+       

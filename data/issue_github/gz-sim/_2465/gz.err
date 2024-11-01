@@ -1,0 +1,14 @@
+Stack trace (most recent call last) in thread 96154:
+11   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in
+10   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7ff17f1de84f, in
+9    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7ff17f14cac2, in
+8    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7ff17ae89252, in
+7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff178b7f5f5, in
+6    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff178b7f635, in
+5    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff178b7f6a9, in
+4    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff178b7f77b, in
+3    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff178b7f813, in
+2    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7ff178b6f9a3, in
+1    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7ff13baf8097, in gz::sim::v8::systems::AckermannSteering::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+0    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-ackermann-steering-system.so", at 0x7ff13bafa472, in gz::sim::v8::systems::AckermannSteeringPrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+Segmentation fault (Address not mapped to object [(nil)])

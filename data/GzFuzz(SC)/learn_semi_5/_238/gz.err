@@ -1,0 +1,9 @@
+Stack trace (most recent call last) in thread 144308:
+#6    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#5    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76f8a0b2684f, in 
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x76f8a0a94ac2, in 
+#3    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x76f89c4dc252, in 
+#2    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x76f89b1e6118, in 
+#1    Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x76f89b1e5d2a, in 
+#0    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-logicalaudiosensorplugin-system.so", at 0x76f888f9e18a, in gz::sim::v8::systems::LogicalAudioSensorPlugin::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+Segmentation fault (Address not mapped to object [0x8])

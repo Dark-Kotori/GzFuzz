@@ -1,0 +1,12 @@
+Stack trace (most recent call last) in thread 525652:
+#9    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#8    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x725e0112684f, in 
+#7    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x725e01094ac2, in 
+#6    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x725dfcadc252, in 
+#5    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x725dfb554c50, in 
+#4    Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x725dfb554133, in 
+#3    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-mecanum-drive-system.so", at 0x725de92597c4, in non-virtual thunk to gz::sim::v8::systems::MecanumDrive::PostUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#2    Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-mecanum-drive-system.so", at 0x725de9259419, in gz::sim::v8::systems::MecanumDrivePrivate::UpdateVelocity(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager const&)
+#1    Object "/home/qiguanxiao/workspace/install/lib/libgz-math7.so.7", at 0x725dfe393068, in gz::math::v7::SpeedLimiter::Limit(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+#0    Object "/home/qiguanxiao/workspace/install/lib/libgz-math7.so.7", at 0x725dfe392ec4, in gz::math::v7::SpeedLimiter::LimitJerk(double&, double, double, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) const
+Segmentation fault (Address not mapped to object [(nil)])

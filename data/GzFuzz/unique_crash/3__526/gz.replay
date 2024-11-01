@@ -1,0 +1,35 @@
+gz sim a.sdf -r -v 0 -s --headless-rendering: ./dart/dynamics/FreeJoint.cpp:670: virtual void dart::dynamics::FreeJoint::updateRelativeTransform() const: Assertion `math::verifyTransform(mT)' failed.
+Stack trace (most recent call last):
+#31   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x55adce67117e, in 
+#30   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7a9ea52a8e19, in ruby_run_node
+#29   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7a9ea52a5317, in 
+#28   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7a9ea543a30c, in rb_vm_exec
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7a9ea5434c96, in 
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7a9ea5431fc5, in 
+#25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7a9ea542fc34, in 
+#24   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7a9ea4c9544b, in 
+#23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7a9ea53fd088, in rb_nogvl
+#22   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7a9ea4c94d6b, in 
+#21   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7a9ea502e492, in 
+#20   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7a9ea5031e2d, in 
+#19   Object "/home/liyitao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x7a9ea430692f, in runServer
+#18   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7a9e9f5bd721, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#17   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7a9e9f5d0f8f, in 
+#16   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7a9e9f5f043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#15   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7a9e9f5ef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#14   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7a9e9f5e1dd1, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#13   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7a9e5a1cd21e, in gz::sim::v8::systems::Physics::Update(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#12   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7a9e5a1adf28, in gz::sim::v8::systems::PhysicsPrivate::Step(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+#11   Object "/home/liyitao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7a9e53999a94, in gz::physics::dartsim::SimulationFeatures::WorldForwardStep(gz::physics::Identity const&, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::CompositeData&, gz::physics::ExpectData<gz::physics::ApplyExternalForceTorques, gz::physics::ApplyGeneralizedForces, gz::physics::VelocityControlCommands, gz::physics::ServoControlCommands, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+#10   Object "/home/liyitao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7a9e5399e1ba, in void gz::physics::OperateOnSpecifiedData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::FindRequired, gz::physics::detail::WriteDataOperation, gz::physics::dartsim::SimulationFeatures const>::Operate<gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> > >(gz::physics::dartsim::SimulationFeatures const*, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::DataStatusMask const&, bool)
+#9    Object "/home/liyitao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7a9e5399bbbe, in gz::physics::detail::WriteDataOperation<gz::physics::WorldPoses, gz::physics::dartsim::SimulationFeatures const, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> > >::Operate(gz::physics::dartsim::SimulationFeatures const*, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&)
+#8    Object "/home/liyitao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7a9e53996b81, in gz::physics::dartsim::SimulationFeatures::Write(gz::physics::WorldPoses&) const
+#7    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7a9e5322df72, in dart::dynamics::Frame::getWorldTransform() const
+#6    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7a9e53279669, in dart::dynamics::Joint::getRelativeTransform() const
+#5    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7a9e53236f18, in dart::dynamics::FreeJoint::updateRelativeTransform() const
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7a9ea4e39e95, in __assert_fail
+#3    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7a9ea4e2871a, in 
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7a9ea4e287f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7a9ea4e42475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7a9ea4e969fc, in pthread_kill
+Aborted (Signal sent by tkill() 1094514 1002)

@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/apply_link_wrench/get_parameter --reptype gz.msgs.ParameterValue --reqtype gz.msgs.ParameterName --req 'name: "kl"'

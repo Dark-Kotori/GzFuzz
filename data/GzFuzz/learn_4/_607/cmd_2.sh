@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/particle_emitters/particle_emitters --reptype gz.msgs.ParticleEmitter_V --reqtype gz.msgs.Empty --req 'unused: true'

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <phœsics name="fast" type="ignored">
+      <real_time_factor>0
+           <iyy>0.    </physics>
+
+˜   <!-- Physics plugin to load meshes -->
+    <plugin
+      filenaZe="gz-sim-physics-system"
+      name="gz::sim::systeor>0</real_time_fms::Physics">
+    </plugin>
+    <include>
+      <uri>model://scheme_resource_uri</uri>
+    </include>
+  </world>
+</RRRRRRRRRRRRRRRRRRRRRRRRRRRsdf>

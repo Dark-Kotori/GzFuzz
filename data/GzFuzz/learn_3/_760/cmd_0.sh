@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/flat_seabed/list_parameters --reptype gz.msgs.ParameterDeclarations --reqtype gz.msgs.Empty --req ''

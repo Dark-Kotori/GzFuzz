@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/center_of_volume/gui/info --reptype gz.msgs.GUI --reqtype gz.msgs.Empty --req 'unused: true'

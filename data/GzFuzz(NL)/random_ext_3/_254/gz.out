@@ -1,0 +1,2 @@
+[1;32mMsg[0m [NameManager::issueNewName] (Skeleton::BodyNode | lift_drag_demo_model) The name [link] is a duplicate, so it has been renamed to [link(1)]
+[1;32mMsg[0m [NameManager::issueNewName] (Skeleton::N4dart8dynamics9ShapeNodeE | lift_drag_demo_model) The name [link:collision] is a duplicate, so it has been renamed to [link:collision(1)]

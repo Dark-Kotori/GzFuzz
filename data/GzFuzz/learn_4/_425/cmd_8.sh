@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/optical_tactile_plugin/system/info --reptype gz.msgs.EntityPlugin_V --reqtype gz.msgs.Empty --req 'unused: true'

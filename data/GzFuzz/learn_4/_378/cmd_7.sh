@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/gpu_lidar_retro_values_sensor/scene/info --reptype gz.msgs.Scene --reqtype gz.msgs.Empty --req 'unused: true'

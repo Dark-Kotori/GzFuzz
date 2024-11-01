@@ -1,0 +1,35 @@
+gz sim a.sdf -r -v 0 -s --headless-rendering: ./dart/dynamics/BodyNode.cpp:1818: virtual void dart::dynamics::BodyNode::updateTransmittedForceFD(): Assertion `!math::isNan(mF)' failed.
+Stack trace (most recent call last):
+#31   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x642d3d6131c4, in _start
+#30   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71858d029e3f, in __libc_start_main
+#29   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71858d029d8f, in 
+#28   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x642d3d61317e, in 
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71858d4a8e19, in ruby_run_node
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71858d4a5317, in 
+#25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71858d63a30c, in rb_vm_exec
+#24   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71858d634c96, in 
+#23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71858d631fc5, in 
+#22   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71858d62fc34, in 
+#21   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x71858cef644b, in 
+#20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x71858d5fd088, in rb_nogvl
+#19   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x71858cef5d6b, in 
+#18   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x71858d22d492, in 
+#17   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x71858d230e2d, in 
+#16   Object "/home/liyitao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x71858c55e92f, in runServer
+#15   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7185877bd721, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#14   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7185877d0f8f, in 
+#13   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7185877f043a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#12   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7185877ef600, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#11   Object "/home/liyitao/workspace/install/lib/libgz-sim8.so.8", at 0x7185877e1dd1, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#10   Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x718541dcd21e, in gz::sim::v8::systems::Physics::Update(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#9    Object "/home/liyitao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x718541dadf28, in gz::sim::v8::systems::PhysicsPrivate::Step(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+#8    Object "/home/liyitao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x71853b599a1a, in gz::physics::dartsim::SimulationFeatures::WorldForwardStep(gz::physics::Identity const&, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::CompositeData&, gz::physics::ExpectData<gz::physics::ApplyExternalForceTorques, gz::physics::ApplyGeneralizedForces, gz::physics::VelocityControlCommands, gz::physics::ServoControlCommands, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+#7    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x71853af936ae, in dart::simulation::World::step(bool)
+#6    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x71853aef5f14, in dart::dynamics::Skeleton::computeForwardDynamics()
+#5    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x71853adf2b0c, in dart::dynamics::BodyNode::updateTransmittedForceFD()
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71858d039e95, in __assert_fail
+#3    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71858d02871a, in 
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71858d0287f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71858d042475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x71858d0969fc, in pthread_kill
+Aborted (Signal sent by tkill() 2711078 1002)

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<s›f version="1.6">
+  <world name="quadrotor">
+
+    <physics name="1ms" ty<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world nme="default">
+    <phe="quadrotor">
+
+    <physics nysics name="fast" type="ihnored">
+      <real_time_factor>0</real_timeem"
+      name="gz::sim
+
+    <!-- Physics plugin to load meshes -->
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plu

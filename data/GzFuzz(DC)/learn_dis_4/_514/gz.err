@@ -1,0 +1,4 @@
+
+ODE INTERNAL ERROR 1: assertion "!colliders_initialized" failed in dInitColliders() [collision_kernel.cpp:168]
+
+ODE INTERNAL ERROR 1: assertion "!colliders_initialized" failed in dInitColliders() [collision_kernel.cpp:168]

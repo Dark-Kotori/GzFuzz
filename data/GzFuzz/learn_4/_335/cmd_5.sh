@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/gpu_lidar_retro_values_sensor/gui/info --reptype gz.msgs.GUI --reqtype gz.msgs.Empty --req ''

@@ -1,0 +1,34 @@
+Stack trace (most recent call last):
+31   Object "gz sim server", at 0x56552e3911c4, in _start
+30   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f698bc34e3f, in __libc_start_main
+29   Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f698bc34d8f, in
+28   Object "gz sim server", at 0x56552e39117e, in
+27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698bedce19, in ruby_run_node
+26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698bed9317, in
+25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c06e33c, in rb_vm_exec
+24   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c068cc6, in
+23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c065ff5, in
+22   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c063c64, in
+21   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698bfafa4e, in
+20   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698beda9ac, in rb_protect
+19   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c072c91, in rb_yield
+18   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c06e33c, in rb_vm_exec
+17   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c068cc6, in
+16   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c065ff5, in
+15   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c063c64, in
+14   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f6987c1144b, in
+13   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f698c0310b8, in rb_nogvl
+12   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f6987c10d6b, in
+11   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f6987c02492, in
+10   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f6987c05e2d, in
+9    Object "/data/play/robot/workspace/install/lib/libgz-sim8-gz.so.8.5.0", at 0x7f6986f59d7d, in runServer
+8    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6985669fee, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+7    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f6985695a63, in
+6    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f69856c6740, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+5    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f69856c755e, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+4    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f69856c38e6, in gz::sim::v8::SimulationRunner::UpdateSystems()
+3    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-logicalaudiosensorplugin-system.so", at 0x7f6964673deb, in gz::sim::v8::systems::LogicalAudioSensorPlugin::PreUpdate(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+2    Object "/data/play/robot/workspace/install/lib/gz-sim-8/plugins/libgz-sim-logicalaudiosensorplugin-system.so", at 0x7f696467bc53, in gz::sim::v8::systems::LogicalAudioSensorPluginPrivate::DurationExceeded(gz::sim::v8::UpdateInfo const&, gz::sim::v8::logical_audio::SourcePlayInfo const&)
+1    Object "/home/ren/play/robot/workspace/install/lib/libgz-sim8.so.8", at 0x7f69856fde64, in std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+0    Object "/data/play/robot/workspace/install/lib/libgz-sim8-gz.so.8.5.0", at 0x7f6986f83ce2, in std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+Segmentation fault (Address not mapped to object [0x18])

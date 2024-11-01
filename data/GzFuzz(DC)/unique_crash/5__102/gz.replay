@@ -1,0 +1,54 @@
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 2. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (4,3): 2. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (3,3): 3. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (5,3): 3. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:308][0m [Inertia::verifySpatialTensor] Invalid entry for (4,4): 8. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:317][0m [Inertia::verifySpatialTensor] Invalid entry for (5,4): 8. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (3,0): 4. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (4,1): 10. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (5,2): 15. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (0,3): 4. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (1,4): 10. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:335][0m [Inertia::verifySpatialTensor] Invalid entry for (2,5): 15. Value should be exactly zero.
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (3,1) and (4,0). They should sum to zero, but instead they sum to 14 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (3,2) and (5,0). They should sum to zero, but instead they sum to 19 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (4,2) and (5,1). They should sum to zero, but instead they sum to 25 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (0,4) and (1,3). They should sum to zero, but instead they sum to 14 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (0,5) and (2,3). They should sum to zero, but instead they sum to 19 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:359][0m [Inertia::verifySpatialTensor] Mismatch between entries (1,5) and (2,4). They should sum to zero, but instead they sum to 25 which is outside of the permitted tolerance (1e-08).
+[1;33mWarning [Inertia.cpp:207][0m [Inertia::setSpatialTensor] Passing in an invalid spatial inertia tensor. Results might not be physically accurate or meaningful.
+gz sim a.sdf -r -v 0 -s --headless-rendering: ./dart/dynamics/FreeJoint.cpp:670: virtual void dart::dynamics::FreeJoint::updateRelativeTransform() const: Assertion `math::verifyTransform(mT)' failed.
+Stack trace (most recent call last):
+#31   Object "gz sim a.sdf -r -v 0 -s --headless-rendering", at 0x5cc56d09b17e, in 
+#30   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7332862a8e19, in ruby_run_node
+#29   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7332862a5317, in 
+#28   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73328643a30c, in rb_vm_exec
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x733286434c96, in 
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x733286431fc5, in 
+#25   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x73328642fc34, in 
+#24   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x73328603344b, in 
+#23   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7332863fd088, in rb_nogvl
+#22   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x733286032d6b, in 
+#21   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x733285c7d492, in 
+#20   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x733285c80e2d, in 
+#19   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8-gz.so.8.0.0", at 0x73328529f9f7, in runServer
+#18   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7332802cd25a, in gz::sim::v8::Server::Run(bool, unsigned long, bool)
+#17   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x7332803139d4, in 
+#16   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x73328036f01a, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#15   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x73328036cdc8, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#14   Object "/home/qiguanxiao/workspace/install/lib/libgz-sim8.so.8", at 0x73328034a3fe, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#13   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x733243021f28, in gz::sim::v8::systems::Physics::Update(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#12   Object "/home/qiguanxiao/workspace/install/lib/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x733242fd38a3, in gz::sim::v8::systems::PhysicsPrivate::Step(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+#11   Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x73323c718e77, in gz::physics::dartsim::SimulationFeatures::WorldForwardStep(gz::physics::Identity const&, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::CompositeData&, gz::physics::ExpectData<gz::physics::ApplyExternalForceTorques, gz::physics::ApplyGeneralizedForces, gz::physics::VelocityControlCommands, gz::physics::ServoControlCommands, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+#10   Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x73323c726150, in void gz::physics::OperateOnSpecifiedData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::FindRequired, gz::physics::detail::WriteDataOperation, gz::physics::dartsim::SimulationFeatures const>::Operate<gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> > >(gz::physics::dartsim::SimulationFeatures const*, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&, gz::physics::DataStatusMask const&, bool)
+#9    Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x73323c71f0fb, in gz::physics::detail::WriteDataOperation<gz::physics::WorldPoses, gz::physics::dartsim::SimulationFeatures const, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> > >::Operate(gz::physics::dartsim::SimulationFeatures const*, gz::physics::SpecifyData<gz::physics::RequireData<gz::physics::WorldPoses>, gz::physics::ExpectData<gz::physics::ChangedWorldPoses, gz::physics::Contacts, gz::physics::JointPositions> >&)
+#8    Object "/home/qiguanxiao/workspace/install/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x73323c71139c, in gz::physics::dartsim::SimulationFeatures::Write(gz::physics::WorldPoses&) const
+#7    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x73323be2df72, in dart::dynamics::Frame::getWorldTransform() const
+#6    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x73323be79669, in dart::dynamics::Joint::getRelativeTransform() const
+#5    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x73323be36f18, in dart::dynamics::FreeJoint::updateRelativeTransform() const
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x733285e39e95, in __assert_fail
+#3    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x733285e2871a, in 
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x733285e287f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x733285e42475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x733285e969fc, in pthread_kill
+Aborted (Signal sent by tkill() 3363262 1000)

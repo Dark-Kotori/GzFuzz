@@ -1,0 +1,35 @@
+gz sim server: ./dart/dynamics/BoxShape.cpp:45: dart::dynamics::BoxShape::BoxShape(const Vector3d&): Assertion `_size[2] > 0.0' failed.
+Stack trace (most recent call last):
+#31   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f37e5ca69ac, in rb_protect
+#30   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f37e5e3ec61, in rb_yield
+#29   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f37e5e3a30c, in rb_vm_exec
+#28   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f37e5e34c96, in 
+#27   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f37e5e31fc5, in 
+#26   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f37e5e2fc34, in 
+#25   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f37e5a8e44b, in 
+#24   Object "/lib/x86_64-linux-gnu/libruby-3.0.so.3.0", at 0x7f37e5dfd088, in rb_nogvl
+#23   Object "/usr/lib/x86_64-linux-gnu/ruby/3.0.0/fiddle.so", at 0x7f37e5a8dd6b, in 
+#22   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f37e5a62492, in 
+#21   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x7f37e5a65e2d, in 
+#20   Object "/usr/lib/x86_64-linux-gnu/libgz-sim8-gz.so.8.6.0", at 0x7f37e56d3605, in runServer
+#19   Object "/lib/x86_64-linux-gnu/libgz-sim8.so.8", at 0x7f37e013d485, in 
+#18   Object "/lib/x86_64-linux-gnu/libgz-sim8.so.8", at 0x7f37e014d8a2, in gz::sim::v8::SimulationRunner::Run(unsigned long)
+#17   Object "/lib/x86_64-linux-gnu/libgz-sim8.so.8", at 0x7f37e014ce60, in gz::sim::v8::SimulationRunner::Step(gz::sim::v8::UpdateInfo const&)
+#16   Object "/lib/x86_64-linux-gnu/libgz-sim8.so.8", at 0x7f37e014c0a2, in gz::sim::v8::SimulationRunner::UpdateSystems()
+#15   Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7f37d751f585, in gz::sim::v8::systems::Physics::Update(gz::sim::v8::UpdateInfo const&, gz::sim::v8::EntityComponentManager&)
+#14   Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7f37d751f4b2, in gz::sim::v8::systems::PhysicsPrivate::CreatePhysicsEntities(gz::sim::v8::EntityComponentManager const&, bool)
+#13   Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7f37d7519544, in gz::sim::v8::systems::PhysicsPrivate::CreateModelEntities(gz::sim::v8::EntityComponentManager const&, bool)
+#12   Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-physics-system.so", at 0x7f37d7598f06, in 
+#11   Object "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7f379fdf1fb3, in virtual thunk to gz::physics::dartsim::SDFFeatures::ConstructSdfModel(gz::physics::Identity const&, sdf::v14::Model const&)
+#10   Object "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7f379fdf13fa, in gz::physics::dartsim::SDFFeatures::ConstructSdfModelImpl(unsigned long, sdf::v14::Model const&)
+#9    Object "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7f379fded384, in gz::physics::dartsim::SDFFeatures::FindOrConstructLink(std::shared_ptr<dart::dynamics::Skeleton> const&, gz::physics::Identity const&, sdf::v14::Model const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+#8    Object "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7f379fdecdc4, in gz::physics::dartsim::SDFFeatures::ConstructSdfLink(gz::physics::Identity const&, sdf::v14::Link const&)
+#7    Object "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7f379fdf3a6e, in gz::physics::dartsim::SDFFeatures::ConstructSdfCollision(gz::physics::Identity const&, sdf::v14::Collision const&)
+#6    Object "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so", at 0x7f379fdf2c34, in 
+#5    Object "/lib/x86_64-linux-gnu/libdart.so.6.13", at 0x7f379f807f1e, in dart::dynamics::BoxShape::BoxShape(Eigen::Matrix<double, 3, 1, 0, 3, 1> const&)
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f37e5839e95, in __assert_fail
+#3    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f37e582871a, in 
+#2    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f37e58287f2, in abort
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f37e5842475, in raise
+#0    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7f37e58969fc, in pthread_kill
+Aborted (Signal sent by tkill() 3370274 1000)```

@@ -1,0 +1,1 @@
+gz service --timeout 10000 -s /world/default/model/model/sensor/source_1/stop --reptype gz.msgs.Boolean --reqtype gz.msgs.Empty --req 'unused: true'

@@ -1,0 +1,2 @@
+[1;32mMsg[0m [NameManager::issueNewName] (Skeleton::Joint | trigger) The name [fixed] is a duplicate, so it has been renamed to [fixed(1)]
+[1;32mMsg[0m [NameManager::issueNewName] (Skeleton::N4dart8dynamics9ShapeNodeE | trigger) The name [box_body:c1] is a duplicate, so it has been renamed to [box_body:c1(1)]

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<sdrld name="d1.6">
+  <world name="default">
+    <physics nam%="fast" type="ignored">
+      <real_time_factor>0</real_tim<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <phicsname="fast" " type="ignored">
+      <real_time_factor>0</real_time_factor>
+    </physics>
+
+    <inc
