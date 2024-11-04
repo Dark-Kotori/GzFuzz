@@ -18,7 +18,8 @@ All of our experiment data is in `data`.
 - gazebo - 8.0.0
 - pytorch - 2.4.1+cpu
 - protobuf - 3.12.4
-- lxml - 4.8.0
+- lxml - 5.3.0
+- randomproto - 0.0.1
 - psutil - 5.9.0
 - numpy - 1.26.4
 - scikit-learn - 1.5.2
