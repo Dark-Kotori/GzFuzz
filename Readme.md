@@ -58,7 +58,18 @@ parser.add_option("-t", "--timeout", dest="timeout", type="int", default=10000, 
 | #2459  | fixed     | 3     | Crash after adding and removing lift_drag_demo_model         |
 | #2464  | fixed     | 2     | Crash after removing model with LogicalAudioSensorPlugin     |
 | #2465  | fixed     | 3     | Crash after calling WorldControl service over model with AckermannSteering plugin |
-| #24git push origin maint |
+| #2466  | fixed     | 3     | Crash after removing model with started LinearBatteryPlugin  |
+| #2507  | fixed     | 2     | Crash after dynamically adding plugin AckermannSteering      |
+| #2508  | fixed     | 2     | Crash after dynamically adding plugin LiftDrag               |
+| #2511  | fixed     | 2     | Crash after dynamically adding plugin LinearBatteryPlugin    |
+| #2512  | fixed     | 2     | Crash after dynamically adding plugin DiffDrive              |
+| #2513  | fixed     | 2     | Crash after dynamically adding plugin MecanumDrive           |
+| #2531  | fixed     | 2     | Crash after calling /model/elevator/door_0/lidar topic with empty gz.msgs.LaserScan message |
+| #2541  | fixed     | 2     | Crash after calling /depth_camera/points topic               |
+| #2566  | fixed     | 2     | Crash after removing model with FollowActor plugin           |
+| #2615  | fixed     | 1     | Crash after loading an sdf containing an invalid near clip distance parameter |
+| #2624  | fixed     | 2     | Crash after adding plugin MulticopterMotorModel              |
+| #614   | fixed     | 2     | Crash after calling /gazebo/resource_paths/resolve with empty request |
 | #2471  | confirmed | 2     | Crash after adding model twice to the same location          |
 | #2538  | confirmed | 2     | Crash after calling playback/control service on the buoyant_cylinder example |
 | #2624  | fixed     | 3     | Crash after adding model with DetachableJoint and resetting  |
