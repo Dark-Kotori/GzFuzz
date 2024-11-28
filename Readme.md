@@ -50,3 +50,22 @@ parser.add_option("-p", "--plugin", dest="plugin", action="store_true", help="en
 parser.add_option("-t", "--timeout", dest="timeout", type="int", default=10000, help="timeout")
 ```
 
+### Summarization of the Detected Bugs
+
+| Bug ID | Status    | Steps | Symptom                                                      |
+| :----- | --------- | ----- | ------------------------------------------------------------ |
+| #2458  | fixed     | 2     | Crash caused by service “/world/default/enable_collision” #2459 fixed 3 Crash after adding and removing lift_drag_demo_model |
+| #2459  | fixed     | 3     | Crash after adding and removing lift_drag_demo_model         |
+| #2464  | fixed     | 2     | Crash after removing model with LogicalAudioSensorPlugin     |
+| #2465  | fixed     | 3     | Crash after calling WorldControl service over model with AckermannSteering plugin |
+| #24git push origin maint |
+| #2471  | confirmed | 2     | Crash after adding model twice to the same location          |
+| #2538  | confirmed | 2     | Crash after calling playback/control service on the buoyant_cylinder example |
+| #2624  | fixed     | 3     | Crash after adding model with DetachableJoint and resetting  |
+| #661   | duplicate | 1     | Crash caused by bounding box overflow                        |
+| #2542  | confirmed | 2     | Crash after calling WorldControl service over ModelPhotoShoot |
+| #2543  | fixed     | 2     | Crash after calling /optical_tactile_sensor/enable over OpticalTactilePlugin |
+| #2600  | confirmed | 2     | Crash after calling control/state over OpticalTactilePlugin  |
+| #2605  | confirmed | 2     | Crash after calling set_pose service over model with JointTrajectoryController plugin |
+| #2616  | confirmed | 1     | Crash after loading sdf with negative size parameter         |
+
