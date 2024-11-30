@@ -52,6 +52,8 @@ parser.add_option("-t", "--timeout", dest="timeout", type="int", default=10000, 
 
 ### Summarization of the Detected Bugs
 
+Among the 25 submitted bugs, 24 have been fixed or confirmed (5 more fixed/confirmed since the submission), 1 identified as duplicate.
+
 | Bug ID | Status    | Steps | Symptom                                                      |
 | :----- | --------- | ----- | ------------------------------------------------------------ |
 | #2458  | fixed     | 2     | Crash caused by service “/world/default/enable_collision” #2459 fixed 3 Crash after adding and removing lift_drag_demo_model |
@@ -70,13 +72,13 @@ parser.add_option("-t", "--timeout", dest="timeout", type="int", default=10000, 
 | #2615  | fixed     | 1     | Crash after loading an sdf containing an invalid near clip distance parameter |
 | #2624  | fixed     | 2     | Crash after adding plugin MulticopterMotorModel              |
 | #614   | fixed     | 2     | Crash after calling /gazebo/resource_paths/resolve with empty request |
+| #2624  | fixed     | 3     | Crash after adding model with DetachableJoint and resetting  |
+| #2543  | fixed     | 2     | Crash after calling /optical_tactile_sensor/enable over OpticalTactilePlugin |
 | #2471  | confirmed | 2     | Crash after adding model twice to the same location          |
 | #2538  | confirmed | 2     | Crash after calling playback/control service on the buoyant_cylinder example |
-| #2624  | fixed     | 3     | Crash after adding model with DetachableJoint and resetting  |
-| #661   | duplicate | 1     | Crash caused by bounding box overflow                        |
 | #2542  | confirmed | 2     | Crash after calling WorldControl service over ModelPhotoShoot |
-| #2543  | fixed     | 2     | Crash after calling /optical_tactile_sensor/enable over OpticalTactilePlugin |
 | #2600  | confirmed | 2     | Crash after calling control/state over OpticalTactilePlugin  |
 | #2605  | confirmed | 2     | Crash after calling set_pose service over model with JointTrajectoryController plugin |
 | #2616  | confirmed | 1     | Crash after loading sdf with negative size parameter         |
+| #661   | duplicate | 1     | Crash caused by bounding box overflow                        |
 
