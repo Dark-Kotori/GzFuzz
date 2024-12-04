@@ -56,7 +56,8 @@ Among the 25 submitted bugs, 24 have been fixed or confirmed (5 more fixed/confi
 
 | Bug ID | Status    | Steps | Symptom                                                      |
 | :----- | --------- | ----- | ------------------------------------------------------------ |
-| #2458  | fixed     | 2     | Crash caused by service “/world/default/enable_collision” #2459 fixed 3 Crash after adding and removing lift_drag_demo_model |
+| #2458  | fixed     | 2     | Crash caused by service “/world/default/enable_collision”    |
+| #2459  | fixed     | 3     | Crash after adding and removing lift_drag_demo_model         |
 | #2459  | fixed     | 3     | Crash after adding and removing lift_drag_demo_model         |
 | #2464  | fixed     | 2     | Crash after removing model with LogicalAudioSensorPlugin     |
 | #2465  | fixed     | 3     | Crash after calling WorldControl service over model with AckermannSteering plugin |
