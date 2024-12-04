@@ -52,7 +52,7 @@ parser.add_option("-t", "--timeout", dest="timeout", type="int", default=10000, 
 
 ### Summarization of the Detected Bugs
 
-Among the 25 submitted bugs, 24 have been fixed or confirmed (5 more fixed/confirmed since the submission), 1 identified as duplicate.
+Among the 25 submitted bugs, 24 have been fixed or confirmed (5 more fixed/confirmed since the submission), 1 identified as duplicate. *Note*: There was a typo in the submitted manuscript, i.e., the first #2624 should be #2646
 
 | Bug ID | Status    | Steps | Symptom                                                      |
 | :----- | --------- | ----- | ------------------------------------------------------------ |
@@ -70,7 +70,7 @@ Among the 25 submitted bugs, 24 have been fixed or confirmed (5 more fixed/confi
 | #2541  | fixed     | 2     | Crash after calling /depth_camera/points topic               |
 | #2566  | fixed     | 2     | Crash after removing model with FollowActor plugin           |
 | #2615  | fixed     | 1     | Crash after loading an sdf containing an invalid near clip distance parameter |
-| #2624  | fixed     | 2     | Crash after adding plugin MulticopterMotorModel              |
+| #2646  | fixed     | 2     | Crash after adding plugin MulticopterMotorModel              |
 | #614   | fixed     | 2     | Crash after calling /gazebo/resource_paths/resolve with empty request |
 | #2624  | fixed     | 3     | Crash after adding model with DetachableJoint and resetting  |
 | #2543  | fixed     | 2     | Crash after calling /optical_tactile_sensor/enable over OpticalTactilePlugin |
